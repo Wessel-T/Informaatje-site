@@ -39,6 +39,7 @@ h3{
     justify-content: space-between;
     max-width: 1200px;
     margin: 0 auto;
+    
      
 }
 
@@ -104,13 +105,84 @@ h3{
 
 .nav-link:hover {
     opacity: 0.7;
+     text-decoration: underline;
 }
 
 .welcome {
     scroll-margin-top: 80px;
-    padding: 40px 20px;
+    padding: 60px 40px;
     /* color: ; */
+}
 
+.home-content {
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: start;
+}
+
+.home-left h1 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.home-subtitle {
+    font-size: 18px;
+    margin-bottom: 30px;
+    border: 2px solid #4F81BD;
+    padding: 10px 15px;
+    display: inline-block;
+    background-color: #fff;
+}
+
+.home-text {
+    line-height: 1.8;
+    color: #333;
+}
+
+.home-text p {
+    margin-bottom: 15px;
+}
+
+/* Right Side - Image and bulletpoints */
+.home-right {
+    margin-left: 80px ;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.image-placeholder {
+    
+    width: 400px;
+    height: 200px;
+    border: 3px solid #000;
+    background-color: #fff;
+    position: relative;
+}
+
+.features-list {
+    list-style: none;
+    padding: 0;
+}
+
+.features-list li {
+    font-size: 20px;
+    margin-bottom: 20px;
+    padding-left: 30px;
+    position: relative;
+    color: #333;
+}
+
+.features-list li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    font-size: 28px;
+    color: #000;
 }
 
 .wat_is {
@@ -185,6 +257,8 @@ h3{
 
 .footer-link:hover {
     color: #92D050;
+    font-style: italic;
+    text-decoration: underline;
 }
 
 .footer-bottom {
@@ -194,6 +268,11 @@ h3{
     padding-top: 20px;
     font-size: 14px;
     color: #1f497d;;
+}
+
+.footer-link{
+
+    font-style: italic;
 }
 
 @media screen and (max-width: 768px) {
