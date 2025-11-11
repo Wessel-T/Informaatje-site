@@ -10,9 +10,6 @@ body {
 
 }
 
-p {
-    font-size: 25px;
-}
 
 
 .container-medium {
@@ -22,7 +19,7 @@ p {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-h3{
+h3 {
     font: bold;
 }
 
@@ -39,8 +36,8 @@ h3{
     justify-content: space-between;
     max-width: 1200px;
     margin: 0 auto;
-    
-     
+
+
 }
 
 .logo img {
@@ -105,7 +102,7 @@ h3{
 
 .nav-link:hover {
     opacity: 0.7;
-     text-decoration: underline;
+    text-decoration: underline;
 }
 
 .welcome {
@@ -133,11 +130,12 @@ h3{
     font-size: 18px;
     margin-bottom: 30px;
     padding: 10px 15px;
-    
-    
+
+
 }
 
 .home-text {
+    font-size: 20px;
     line-height: 1.8;
     color: #333;
 }
@@ -148,14 +146,14 @@ h3{
 
 /* Right Side - Image and bulletpoints */
 .home-right {
-    margin-left: 80px ;
+    margin-left: 80px;
     display: flex;
     flex-direction: column;
     gap: 30px;
 }
 
 .image-placeholder {
-    
+
     width: 400px;
     height: 200px;
     border: 3px solid #000;
@@ -188,8 +186,61 @@ h3{
     scroll-margin-top: 80px;
     margin-top: 800px;
     padding: 40px 20px;
-    /* color: ; */
 
+}
+
+/* Section Title */
+.section-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+/* Problem & Solution Boxes */
+.problem-box,
+.solution-box {
+    margin-bottom: 30px;
+}
+
+.problem-box h3,
+.solution-box h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #000;
+}
+
+.problem-box ul,
+.solution-box ul {
+    list-style: disc;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.problem-box ul li,
+.solution-box ul li {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Intro Text */
+.intro-text {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #333;
+    text-align: justify;
+    margin-bottom: 30px;
+}
+
+/* Vertical Image Placeholder */
+.image-placeholder-vertical {
+    width: 200px;
+    height: 400px;
+    border: 3px solid #000;
+    background-color: #fff;
 }
 
 .over-informaatje {
@@ -210,20 +261,20 @@ h3{
 
 .footer-gradient {
     height: 100px;
-    background: linear-gradient(to bottom, 
-        #EBF4F0 0%, 
-        #E5EDF5 30%,
-        #D4E5F4 60%,
-        #C5D9F1 100%
-    );
+    background: linear-gradient(to bottom,
+            #EBF4F0 0%,
+            #E5EDF5 30%,
+            #D4E5F4 60%,
+            #C5D9F1 100%);
 }
 
 .footer {
+    font-size: 25px;
     background-color: #C5D9F1;
     /* box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1); */
     color: #1f497d;
     padding: 40px 20px 20px;
-    
+
 }
 
 .footer-container {
@@ -266,10 +317,11 @@ h3{
     text-align: center;
     padding-top: 20px;
     font-size: 14px;
-    color: #1f497d;;
+    color: #1f497d;
+    ;
 }
 
-.footer-link{
+.footer-link {
 
     font-style: italic;
 }
@@ -330,5 +382,17 @@ h3{
 
     .nav-link {
         font-size: 14px;
+    }
+}
+
+/* Responsive */
+@media screen and (max-width: 968px) {
+    .problem-solution-layout {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .image-placeholder-large {
+        height: 300px;
     }
 }
