@@ -132,10 +132,9 @@ h3{
 .home-subtitle {
     font-size: 18px;
     margin-bottom: 30px;
-    border: 2px solid #4F81BD;
     padding: 10px 15px;
-    display: inline-block;
-    background-color: #fff;
+    
+    
 }
 
 .home-text {
