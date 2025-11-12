@@ -45,9 +45,6 @@ h3 {
     width: auto;
 }
 
-.size {
-    /* width: 700px; */
-}
 
 .nav-menu {
     display: flex;
@@ -62,11 +59,15 @@ h3 {
     align-items: center;
 }
 
-
+.block {
+    background-color: #1f497d;
+    height: 40px;
+}
 
 .nav-menu li {
-    padding: 0 20px;
-    border-right: 2px solid #4F81BD;
+    padding: 0 25px;
+    border-right: 3px solid #3A5F8F;
+    
 }
 
 .nav-menu li:last-child {
@@ -75,8 +76,8 @@ h3 {
 
 .nav-link {
     text-decoration: none;
-    font-size: 24px;
-    font-weight: 600;
+    font-size: 20px;
+    font-weight: 700;
     transition: opacity 0.3s ease;
 }
 
@@ -185,9 +186,31 @@ h3 {
 .wat_is {
     scroll-margin-top: 80px;
     margin-top: 800px;
-    padding: 40px 20px;
+    padding: 60px 20px;
 
 }
+
+.wat-is-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: start;
+}
+
+/* Left Column - Problem & Solution */
+.wat-is-left {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* Right Column - Text & Image */
+.wat-is-right {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
 
 /* Section Title */
 .section-title {
