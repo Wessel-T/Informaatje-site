@@ -46,6 +46,19 @@ h3 {
     width: auto;
 }
 
+.mascot-block {
+    margin-left: 200px;
+    border-radius: 60px;
+    width: 200px;
+    height: 300px;
+    background-color: #1B3689;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
 
 .nav-menu {
     display: flex;
@@ -181,11 +194,10 @@ h3 {
 /* Section Divider */
 .section-divider {
     height: 4px;
-    background: linear-gradient(to right, 
-        #4F81BD 0%, 
-        #92D050 50%, 
-        #4F81BD 100%
-    );
+    background: linear-gradient(to right,
+            #4F81BD 0%,
+            #92D050 50%,
+            #4F81BD 100%);
     margin: 80px auto;
     max-width: 80%;
     border-radius: 2px;
@@ -272,6 +284,11 @@ h3 {
     height: 300px;
     border: 3px solid #000;
     background-color: #fff;
+}
+
+.parkeerplaats {
+    width: 100%;
+    height: 290px;
 }
 
 .over-informaatje {
@@ -381,7 +398,8 @@ h3 {
     height: 80%;
     object-fit: contain;
 }
- .bigfriends {
+
+.bigfriends {
     width: 100%;
     height: 150px;
     border: 3px solid #000;
@@ -399,7 +417,7 @@ h3 {
 .contact-demo {
     scroll-margin-top: 80px;
     margin-top: 800px;
-    
+
     padding: 40px 20px;
     /* color: ; */
 }
