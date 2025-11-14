@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infomaatje Wiki - Gebruikershandleiding</title>
+    <link rel="stylesheet" href="css/wiki.css">
+</head>
+<body>
+    <header class="wiki-header">
+        <div class="header-content">
+            <div class="logo">
+                <h1>📚 Infomaatje Wiki</h1>
+                <span class="tagline">Gebruikershandleiding</span>
+            </div>
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Zoek in wiki..." autocomplete="off">
+                <div id="searchResults" class="search-results"></div>
+            </div>
+        </div>
+    </header>
+
+    <div class="wiki-container">
+        <nav class="sidebar">
+            <div class="nav-section">
+                <h3>Navigatie</h3>
+                <ul>
+                    <li><a href="#inleiding" class="nav-link active">Inleiding</a></li>
+                    <li><a href="#knoppen" class="nav-link">Knoppen</a></li>
+                    <li><a href="#parkeerplaatsen" class="nav-link">Parkeerplaatsen</a></li>
+                </ul>
+            </div>
+            
+            <div class="nav-section">
+                <h3>Dossier</h3>
+                <ul>
+                    <li><a href="#dossier" class="nav-link">Dossier Overzicht</a></li>
+                    <li><a href="#instanties" class="nav-link">Instanties</a></li>
+                    <li><a href="#vragenlijsten" class="nav-link">Vragenlijsten</a></li>
+                    <li><a href="#checklijsten" class="nav-link">Checklijsten</a></li>
+                    <li><a href="#taak-uitvoeren" class="nav-link">Taak uitvoeren</a></li>
+                    <li><a href="#dossier-aanvullen" class="nav-link">Dossier aanvullen</a></li>
+                    <li><a href="#agenda-taak" class="nav-link">Agenda Taak</a></li>
+                    <li><a href="#koppels" class="nav-link">Koppels</a></li>
+                    <li><a href="#correspondentie-dossier" class="nav-link">Correspondentiedossier</a></li>
+                </ul>
+            </div>
+
+            <div class="nav-section">
+                <h3>Overig</h3>
+                <ul>
+                    <li><a href="#notitie-toevoegen" class="nav-link">Notitie toevoegen</a></li>
+                    <li><a href="#correspondentie-overzicht" class="nav-link">Correspondentie Overzicht</a></li>
+                </ul>
+            </div>
+
+            <div class="nav-section">
+                <h3>Admin</h3>
+                <ul>
+                    <li><a href="#admin-vragenlijsten" class="nav-link">Vragenlijsten beheer</a></li>
+                    <li><a href="#admin-taken" class="nav-link">Taken beheer</a></li>
+                </ul>
+            </div>
+
+            <div class="nav-section">
+                <h3>Annexes</h3>
+                <ul>
+                    <li><a href="#outlook-autorisatie" class="nav-link">Outlook autorisatie</a></li>
+                    <li><a href="#gmail-autorisatie" class="nav-link">Gmail autorisatie</a></li>
+                    <li><a href="#ie-instellingen" class="nav-link">IE11 instellingen</a></li>
+                    <li><a href="#weeklies" class="nav-link">Weeklies</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <main class="content">
+            <!-- Inleiding -->
+            <article id="inleiding" class="wiki-article">
+                <h2>Inleiding</h2>
+                <div class="article-meta">
+                    <span class="last-updated">Laatste update: 2024</span>
+                </div>
+                <div class="article-content">
+                    <p>Zodra een kind óf vrijwilliger wordt aangemeld via de website komt deze automatisch in het infomaatje systeem te staan. Bij een nieuwe aanmelding wordt er een <a href="#dossier">dossier</a> aangemaakt en in dat dossier wordt er gelijk een eerste <a href="#checklijsten">checklijst</a> aangemaakt met taken die uitgevoerd moeten worden bij een nieuwe aanmelding.</p>
+                    
+                    <div class="info-box">
+                        <h4>💡 Belangrijk</h4>
+                        <p>Zolang er in deze checklijst een taak staat die nog niet behandeld is zal deze zichtbaar zijn in de desbetreffende <a href="#parkeerplaatsen">parkeerplaats</a> op de welkomstpagina.</p>
+                    </div>
+                    
+                    <p>Via deze parkeerplaatsen kan je in één oogopslag zien welke taken openstaan. Een klik op een taak opent de checklijst voor het desbetreffende dossier.</p>
+                </div>
+            </article>
+
+            <!-- Knoppen -->
+            <article id="knoppen" class="wiki-article">
+                <h2>Knoppen</h2>
+                <div class="article-content">
+                    <p>De onderstaande knoppen zijn op alle pagina's en dienen voor de volgende functies:</p>
+                    
+                    <table class="wiki-table">
+                        <thead>
+                            <tr>
+                                <th>Icoon</th>
+                                <th>Functie</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><span class="icon-placeholder">📊</span></td>
+                                <td>Via deze knop kun je de werklijsten opvragen.</td>
+                            </tr>
+                            <tr>
+                                <td><span class="icon-placeholder">📝</span></td>
+                                <td>Via deze knop is het mogelijk om een <a href="#notitie-toevoegen">notitie toe te voegen</a> aan een Dossier.</td>
+                            </tr>
+                            <tr>
+                                <td><span class="icon-placeholder">⚙️</span></td>
+                                <td>Via deze knop kom je in het zogenoemde <a href="#admin-vragenlijsten">Admin paneel</a>. Hier worden vragen, vragenlijsten, taken, checklijsten, parkeerplaatsen en medewerkers onderhouden. Het Admin paneel geeft ook toegang tot de Rapportages.</td>
+                            </tr>
+                            <tr>
+                                <td><span class="icon-placeholder">🚪</span></td>
+                                <td>Met deze knop log je uit infomaatje.</td>
+                            </tr>
+                            <tr>
+                                <td><span class="icon-placeholder">❓</span></td>
+                                <td>Het vraagteken geeft toegang tot deze gebruikershandleiding.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h3>Zoekfunctie</h3>
+                    <p>Onder de rij met menuknoppen is een zoekveld zichtbaar. Deze wordt gebruikt om te zoeken naar alle dossiers, zowel die van kinderen/vrijwilligers én koppels. Je kan zoeken op:</p>
+                    <ul>
+                        <li>Naam van het kind</li>
+                        <li>Naam van de vrijwilliger</li>
+                        <li>Naam van de casemanager</li>
+                        <li>Aanmaakdatum</li>
+                        <li>Dossiercode</li>
+                    </ul>
+                </div>
+            </article>
+
+            <!-- Parkeerplaatsen -->
+            <article id="parkeerplaatsen" class="wiki-article">
+                <h2>Parkeerplaatsen</h2>
+                <div class="article-content">
+                    <p>De eerste pagina die je ziet na het inloggen in het infomaatje Systeem is de pagina Parkeerplaatsen. Op deze pagina is een overzicht te zien van:</p>
+                    <ul>
+                        <li>De inkomende mails die niet automatisch bij een dossier geplaatst zijn</li>
+                        <li>De zogenaamde "Parkeerplaatsen" met openstaande taken</li>
+                    </ul>
+
+                    <div class="info-box warning">
+                        <h4>⚠️ Let op</h4>
+                        <p>Als casemanager kan je alle openstaande taken in de lijst zien, maar door 1 druk op de knop "Alle" kan je alleen de openstaande taken laten zien die gekoppeld zijn aan dossiers die bij jou horen.</p>
+                    </div>
+
+                    <h3>Inkomende mail</h3>
+                    <p>Infomaatje heeft een eigen email adres. Door naar dit email adres te mailen komt de mail in het vak "Inkomende mail" terecht, tenzij wanneer naar dit adres een mail stuurt en het onderwerp van de mail een Dossiercode zet met een # ervoor op deze manier: <code>#VW015017</code>. Dan wordt de mail automatisch in het goede dossier verwerkt.</p>
+
+                    <h4>Acties bij inkomende mail:</h4>
+                    <ol>
+                        <li><strong>Handmatig koppelen aan een dossier</strong> - Klik op het folder icoon</li>
+                        <li><strong>Verwijderen uit het systeem</strong> - Klik op het prullenbak icoon</li>
+                        <li><strong>De mail openen</strong> - Klik op het onderwerp van de mail (opent in Outlook)</li>
+                    </ol>
+                </div>
+            </article>
+
+            <!-- Dossier -->
+            <article id="dossier" class="wiki-article">
+                <h2>Dossier</h2>
+                <div class="article-content">
+                    <p>Het dossier kent meerdere pagina's met op elke pagina informatie die aan te passen is. Wanneer een dossier geopend wordt kom je standaard op de pagina "Kind", "Vrijwilliger" of "Koppel".</p>
+
+                    <h3>Dossier gegevens</h3>
+                    <p>Op deze pagina zijn de persoonsgegevens te zien van het betreffende persoon en deze zijn te bewerken:</p>
+                    <ul>
+                        <li><strong>Bij een kind:</strong> gegevens van het kind, de moeder, vader én andere huisgenoten</li>
+                        <li><strong>Dossiergegevens:</strong> Casemanager en Status van het dossier</li>
+                        <li><strong>Contact frequentie</strong></li>
+                        <li><strong>Contact toekomst</strong></li>
+                    </ul>
+
+                    <div class="info-box">
+                        <h4>📋 Dossier onderdelen</h4>
+                        <ul>
+                            <li><a href="#instanties">Instanties</a> (alleen bij kind dossier)</li>
+                            <li><a href="#vragenlijsten">Vragenlijsten</a></li>
+                            <li><a href="#checklijsten">Checklijsten</a></li>
+                            <li><a href="#koppels">Koppels</a></li>
+                            <li><a href="#correspondentie-dossier">Correspondentie</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Instanties -->
+            <article id="instanties" class="wiki-article">
+                <h2>Instanties</h2>
+                <div class="article-content">
+                    <div class="info-box">
+                        <h4>ℹ️ Alleen voor kind dossiers</h4>
+                        <p>De pagina met Instanties is alleen zichtbaar voor het kind dossier.</p>
+                    </div>
+
+                    <p>Op deze pagina staan de gegevens van:</p>
+                    <ul>
+                        <li>Het school van het kind</li>
+                        <li>De aanmeldende instantie</li>
+                        <li>Eventuele andere instanties waar het kind mee te maken heeft</li>
+                    </ul>
+                    <p>Alle gegevens op deze pagina zijn ook te bewerken.</p>
+                </div>
+            </article>
+
+            <!-- Vragenlijsten -->
+            <article id="vragenlijsten" class="wiki-article">
+                <h2>Vragenlijsten</h2>
+                <div class="article-content">
+                    <p>De vragenlijsten zijn voor elk dossier zichtbaar. Bij het aanmelden van een kind of vrijwilliger worden al een x aantal vragenlijsten ingevuld. Elk nieuw dossier van een kind óf vrijwilliger heeft daarom standaard al een aantal vragenlijsten staan.</p>
+
+                    <h3>Vragenlijst bekijken</h3>
+                    <p>Onder de kop vragenlijsten zie je een aantal titels van vragenlijsten staan en zodra je erop klikt wordt de vragenlijst zichtbaar.</p>
+
+                    <h3>Vragenlijst toevoegen</h3>
+                    <ol>
+                        <li>Klik op de knop "Vragenlijst toevoegen"</li>
+                        <li>Er wordt een plek zichtbaar waar je 1 van de vragenlijsten kan kiezen</li>
+                        <li>Selecteer de gewenste vragenlijst uit de lijst</li>
+                        <li>Klik op "Toevoegen"</li>
+                        <li>De vragenlijst is nu zichtbaar op de pagina en kan worden ingevuld</li>
+                    </ol>
+
+                    <h3>Doelgroep instellen</h3>
+                    <p>Je kun aangeven voor wie de vragenlijst bedoeld is:</p>
+                    <ul>
+                        <li><strong>Vrijwilliger:</strong> Als de vrijwilliger inloggegevens heeft op de infomaatje website, kan hij/zij zelf de vragenlijsten invullen na inloggen</li>
+                        <li><strong>Casemanager:</strong> Alleen de casemanager kan de vragenlijst invullen</li>
+                    </ul>
+                </div>
+            </article>
+
+            <!-- Checklijsten -->
+            <article id="checklijsten" class="wiki-article">
+                <h2>Checklijsten</h2>
+                <div class="article-content">
+                    <p>Deze module toont de checklijsten welke voor het dossier zijn aangemaakt. Een lijst met titels van checklijsten geeft toegang tot de taken gekoppeld aan de lijst.</p>
+
+                    <h3>Taken afvinken</h3>
+                    <p>Deze taken kan je aanvinken met:</p>
+                    <ul>
+                        <li><strong>NVT</strong> - Niet van toepassing</li>
+                        <li><strong>VT</strong> - Van toepassing</li>
+                    </ul>
+                    <p>Bij elke taak is ook zichtbaar wie er iets mee gedaan heeft en ook wanneer iemand er iets mee gedaan heeft.</p>
+
+                    <div class="info-box warning">
+                        <h4>⚠️ Parkeerplaats zichtbaarheid</h4>
+                        <p>Zolang 1 van deze taken nog niet is aangevinkt blijft deze zichtbaar in een parkeerplaats. Na voltooiing van een taak kan de checklijst zichtbaar worden in een andere parkeerplaats (bijv. "Brieven" na taak "Verstuur brief").</p>
+                    </div>
+
+                    <h3>Checklijst toevoegen</h3>
+                    <p>Een checklijst toevoegen aan een dossier gaat op precies dezelfde manier als hoe een vragenlijst toegevoegd wordt.</p>
+                </div>
+            </article>
+
+            <!-- Taak uitvoeren -->
+            <article id="taak-uitvoeren" class="wiki-article">
+                <h2>Taak uitvoeren</h2>
+                <div class="article-content">
+                    <p>Het is mogelijk dat er aan een taak een actie gekoppeld is. Dan is aan het einde van de regel een icoontje zichtbaar dat aanduidt wat voor taak het betreft.</p>
+
+                    <h3>Actie types</h3>
+                    <table class="wiki-table">
+                        <thead>
+                            <tr>
+                                <th>Type</th>
+                                <th>Icoon</th>
+                                <th>Actie</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Print-actie</td>
+                                <td>🖨️</td>
+                                <td>Opent de tekstverwerker (bijv. Word)</td>
+                            </tr>
+                            <tr>
+                                <td>E-mail actie</td>
+                                <td>✉️</td>
+                                <td>Opent je mailclient (bijv. GMail)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="info-box">
+                        <h4>📧 GMail autorisatie</h4>
+                        <p>Heb je GMail dan dien je infomaatje eerst te <a href="#gmail-autorisatie">autoriseren</a> voor het gebruik van GMail.</p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Dossier aanvullen -->
+            <article id="dossier-aanvullen" class="wiki-article">
+                <h2>Het aanvullen van dossiers</h2>
+                <div class="article-content">
+                    <p>Het verzoek tot het aanvullen van een dossier geschiedt via het versturen van een e-mail aan de vrijwilliger dan wel de aanmelder van een kind.</p>
+
+                    <h3>Speciale taken</h3>
+                    <ul>
+                        <li>Mail: Aanvullen dossier kind</li>
+                        <li>Mail: Aanvullen dossier vrijwilliger</li>
+                    </ul>
+
+                    <h3>Stappenplan</h3>
+                    <ol>
+                        <li>Autoriseer infomaatje voor toegang tot je <a href="#gmail-autorisatie">GMail account</a></li>
+                        <li>Zet de status van het kind/vrijwilliger dossier op "aanvullen" via het eerste scherm van het dossier</li>
+                        <li>Voeg de desbetreffende checklijst toe</li>
+                        <li>Voer de taak 'Mail: Aanvullen ..' uit door op het e-mail icoon te klikken</li>
+                        <li>Het e-mail concept wordt aangemaakt en GMail wordt geopend</li>
+                        <li>Verstuur de e-mail</li>
+                    </ol>
+                </div>
+            </article>
+
+            <!-- Agenda Taak -->
+            <article id="agenda-taak" class="wiki-article">
+                <h2>Agenda Taak</h2>
+                <div class="article-content">
+                    <p>Met behulp van de agenda taak kunnen afspraken vastleggen in Outlook vanuit Infomaatje. We kunnen ook bestaande afspraken in Outlook koppelen met Infomaatje.</p>
+
+                    <h3>Vereisten</h3>
+                    <ul>
+                        <li>Ingelogd zijn bij <a href="#outlook-autorisatie">Outlook</a></li>
+                        <li>Een Outlook agenda kiezen bij de checklijst module</li>
+                    </ul>
+
+                    <h3>Agenda kiezen</h3>
+                    <ol>
+                        <li>Klik op de knop [Kies uw afspraken agenda]</li>
+                        <li>Bij meerdere agenda's: maak een keuze</li>
+                        <li>Bij één agenda: wordt automatisch ingesteld</li>
+                    </ol>
+                    <p>De keuze wordt opgeslagen en kan later worden aangepast via de knop [Agenda].</p>
+
+                    <h3>Afspraak vastleggen</h3>
+                    <ol>
+                        <li>Voer datum en tijd in een agenda-veld in</li>
+                        <li>Infomaatje toont eventuele bestaande afspraken na dit tijdstip</li>
+                        <li>Klik op een bestaande afspraak om te koppelen, OF</li>
+                        <li>Klik op het Outlook icoontje voor een nieuwe afspraak</li>
+                    </ol>
+
+                    <div class="info-box">
+                        <h4>📅 Automatische gegevens</h4>
+                        <p>Bij het aanmaken van een afspraak geeft Infomaatje de titel mee aangevuld met het dossier, plus het adres van de betrokken persoon (bij koppeldossier: het adres van de mentee).</p>
+                    </div>
+
+                    <h3>Afspraak loskoppelen</h3>
+                    <p>Klik op het rode X dat verschijnt zodra je met de cursor over het datumveld beweegt. Dit werkt alleen voor afspraken die jij hebt vastgelegd.</p>
+                </div>
+            </article>
+
+            <!-- Koppels -->
+            <article id="koppels" class="wiki-article">
+                <h2>Koppels</h2>
+                <div class="article-content">
+                    <p>Via deze pagina is het mogelijk om te zien aan wie iemand al gekoppeld is én om een koppeling te maken.</p>
+
+                    <h3>Overzicht</h3>
+                    <p>In het overzicht is duidelijk te zien:</p>
+                    <ul>
+                        <li>Wie met wie gekoppeld is</li>
+                        <li>Wie de casemanager is</li>
+                        <li>De huidige status van de koppeling</li>
+                    </ul>
+
+                    <h3>Nieuwe koppeling maken</h3>
+                    <ol>
+                        <li>Selecteer het kind óf vrijwilliger aan wie je wilt koppelen</li>
+                        <li>Selecteer wie de casemanager moet worden</li>
+                        <li>Bevestig de koppeling</li>
+                    </ol>
+                </div>
+            </article>
+
+            <!-- Correspondentiedossier -->
+            <article id="correspondentie-dossier" class="wiki-article">
+                <h2>Correspondentiedossier</h2>
+                <div class="article-content">
+                    <p>Op de correspondentie pagina is alle correspondentie zichtbaar die aan het dossier gekoppeld is:</p>
+                    <ul>
+                        <li>Notities toegevoegd via de knop bovenaan de pagina</li>
+                        <li>Alle inkomende mails gekoppeld aan het dossiercode</li>
+                        <li>De mails die verstuurd zijn</li>
+                        <li>Alle documenten die via een taak geopend zijn</li>
+                    </ul>
+                    <p>Zo is in 1 lijst zichtbaar welk soort contact er geweest is met een persoon.</p>
+                </div>
+            </article>
+
+            <!-- Notitie toevoegen -->
+            <article id="notitie-toevoegen" class="wiki-article">
+                <h2>Notitie toevoegen</h2>
+                <div class="article-content">
+                    <p>Je kan een notitie toevoegen aan 1 of meerdere dossiers via de notitie knop.</p>
+
+                    <h3>Stappenplan</h3>
+                    <ol>
+                        <li>Klik op de knop "Notitie toevoegen"</li>
+                        <li>Vul het <strong>Onderwerp</strong> in</li>
+                        <li>Vul de <strong>Notitie</strong> in</li>
+                        <li>Bij het veld <strong>Dossiers</strong>: typ de naam óf dossiercode</li>
+                        <li>Er komt automatisch een lijst met resultaten</li>
+                        <li>Klik op het gewenste resultaat</li>
+                        <li>Het Dossiercode staat nu in het veld</li>
+                    </ol>
+
+                    <div class="info-box">
+                        <h4>💡 Meerdere dossiers</h4>
+                        <p>Meerdere dossiercodes kunnen worden ingevoerd gescheiden door een komma.</p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Correspondentie Overzicht -->
+            <article id="correspondentie-overzicht" class="wiki-article">
+                <h2>Correspondentie Overzicht</h2>
+                <div class="article-content">
+                    <p>Op de pagina Correspondentie is alle correspondentie te zien van alle dossiers én ook die niet gekoppeld zijn aan een dossier.</p>
+
+                    <h3>Functies</h3>
+                    <ul>
+                        <li>Duidelijke lijst met gegevens van wie het komt en waar het naartoe gaat</li>
+                        <li>Mogelijkheid om dubbele items te verwijderen</li>
+                        <li>Zoekfunctie boven de lijst (werkt tijdens het typen)</li>
+                    </ul>
+                </div>
+            </article>
+
+            <!-- Admin Vragenlijsten -->
+            <article id="admin-vragenlijsten" class="wiki-article">
+                <h2>Admin - Vragenlijsten</h2>
+                <div class="article-content">
+                    <h3>Soorten vragenlijsten</h3>
+                    <ul>
+                        <li><strong>Korte vragenlijst:</strong> Bestaat uit alleen vragen</li>
+                        <li><strong>Hoofdvragenlijst:</strong> Een grotere vragenlijst opgesplitst in één of meerdere thema vragenlijsten</li>
+                    </ul>
+
+                    <h3>Vragenlijsten beheren</h3>
+                    <p>Na het klikken op de menukeuze 'vragenlijsten' verschijnt een overzicht van alle reeds aangemaakte vragenlijsten.</p>
+
+                    <h4>Opties:</h4>
+                    <ul>
+                        <li><strong>[Nieuwe hoofdvragenlijst]</strong> - Open formulier voor nieuwe hoofdvragenlijst</li>
+                        <li><strong>[Nieuwe vragenlijst]</strong> - Open formulier voor nieuwe vragenlijst</li>
+                        <li><strong>Klik op titel</strong> - Bewerk de vragenlijst</li>
+                        <li><strong>Excel knop</strong> - Exporteer vragenlijst met ingevulde antwoorden</li>
+                        <li><strong>[X] knop</strong> - Verwijder de vragenlijst</li>
+                    </ul>
+
+                    <h3>Vragenlijst aanmaken</h3>
+                    <p>Bij het aanmaken leg je de volgende gegevens vast:</p>
+                    <ul>
+                        <li><strong>Omschrijving:</strong> Titel van de vragenlijst</li>
+                        <li><strong>Toelichting:</strong> Extra toelichting voor het beantwoorden</li>
+                        <li><strong>Voor (respondent):</strong> Jongere/Kind/Little, Leerling, Big/Maatje/Vrijwilliger, Mentor, of Ouder</li>
+                        <li><strong>Verval na:</strong> Na hoeveel tijd de vragenlijst actief wordt</li>
+                        <li><strong>Vragen:</strong> Selecteer uit vooraf aangemaakte vragen of maak nieuwe</li>
+                    </ul>
+
+                    <h3>Vraag aanmaken</h3>
+                    <p>Gegevens bij een vraag:</p>
+                    <ul>
+                        <li><strong>Omschrijving:</strong> Titel van de vraag</li>
+                        <li><strong>Toelichting:</strong> Extra uitleg</li>
+                        <li><strong>Type:</strong>
+                            <ul>
+                                <li>Vrijetekst box</li>
+                                <li>Datumveld</li>
+                                <li>Getallenveld</li>
+                                <li>▾ Keuzelijst (één antwoord)</li>
+                                <li>✓ Keuzeveld (meerdere antwoorden)</li>
+                                <li>⊙ Keuzeveld (één antwoord)</li>
+                                <li>⊙ Enquêtevraag</li>
+                            </ul>
+                        </li>
+                        <li><strong>Toelichting antwoord:</strong> Of men een toelichting kan geven</li>
+                    </ul>
+
+                    <div class="info-box">
+                        <h4>💡 Meerkeuze antwoorden</h4>
+                        <p>Bij meerkeuze vragen scheidt je de mogelijke antwoorden met een komma. Gebruik 'anders' om de respondent zelf een antwoord te laten invullen.</p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Admin Taken -->
+            <article id="admin-taken" class="wiki-article">
+                <h2>Admin - Taken</h2>
+                <div class="article-content">
+                    <p>Taken die we afvinken bij een checklijst gekoppeld aan een dossier definiëren we in de admin omgeving.</p>
+
+                    <h3>Taken overzicht</h3>
+                    <p>Voor iedere taak wordt weergeven:</p>
+                    <ul>
+                        <li>De titel (klik om te bewerken)</li>
+                        <li>Eventueel een icoontje voor mail- of document-taak</li>
+                        <li>X knop om te verwijderen (alleen niet-gekoppelde taken)</li>
+                    </ul>
+
+                    <h3>Taakformulier velden</h3>
+                    <table class="wiki-table">
+                        <thead>
+                            <tr>
+                                <th>Veld</th>
+                                <th>Beschrijving</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Omschrijving</td>
+                                <td>Titel van de taak in checklijst overzicht</td>
+                            </tr>
+                            <tr>
+                                <td>Actie</td>
+                                <td>Agenda, AppVragenlijst, Check, Checklijst, Mail, MailVragenlijst, Module, Print, of Veld</td>
+                            </tr>
+                            <tr>
+                                <td>Handleiding</td>
+                                <td>PDF instructiedocument toevoegen</td>
+                            </tr>
+                            <tr>
+                                <td>Mailsjabloon</td>
+                                <td>Mailtekst met variabelen uit Woordenlijst</td>
+                            </tr>
+                            <tr>
+                                <td>Ontvanger mail</td>
+                                <td>Emailadres variabele van ontvanger</td>
+                            </tr>
+                            <tr>
+                                <td>Mail onderwerp</td>
+                                <td>Onderwerp (infomaatje voegt #[dossiernummer] toe)</td>
+                            </tr>
+                            <tr>
+                                <td>Parkeerplaats</td>
+                                <td>In welk parkeervak de taak verschijnt</td>
+                            </tr>
+                            <tr>
+                                <td>Status dossier na verwerking</td>
+                                <td>Automatisch status bijwerken na VT</td>
+                            </tr>
+                            <tr>
+                                <td>Vervalt na</td>
+                                <td>Na hoeveel tijd de taak vervalt</td>
+                            </tr>
+                            <tr>
+                                <td>Herhaal taak iedere</td>
+                                <td>Frequentie van vragenlijst aanmaken</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </article>
+
+            <!-- Outlook autorisatie -->
+            <article id="outlook-autorisatie" class="wiki-article">
+                <h2>Autoriseren van infomaatje voor Outlook WEB</h2>
+                <div class="article-content">
+                    <h3>Stappenplan</h3>
+                    <ol>
+                        <li>Open je browser</li>
+                        <li>Ga naar infomaatje</li>
+                        <li>Open een dossier vanuit een parkeerplaats</li>
+                        <li>Klik op de knop 'Autoriseren Outlook'</li>
+                    </ol>
+                </div>
+            </article>
+
+            <!-- Gmail autorisatie -->
+            <article id="gmail-autorisatie" class="wiki-article">
+                <h2>Autoriseren van infomaatje voor GMail</h2>
+                <div class="article-content">
+                    <h3>Stappenplan</h3>
+                    <ol>
+                        <li>Open Chrome</li>
+                        <li>Ga naar infomaatje</li>
+                        <li>Open een openstaande taak vanuit een parkeerplaats</li>
+                        <li>De bijbehorende checklijst opent</li>
+                        <li>Verschijnt de button [GMail OK]: klik hierop voor autorisatie</li>
+                        <li>GMail vraagt je in te loggen (indien nog niet ingelogd)</li>
+                        <li>Klik op "toestaan" bij het scherm met machtigingen</li>
+                        <li>Klik op een E-mail icoon bij een taak</li>
+                        <li>Infomaatje genereert een concept e-mail</li>
+                        <li>GMail opent met de aangemaakte e-mail</li>
+                    </ol>
+
+                    <div class="info-box warning">
+                        <h4>⚠️ Popups toestaan</h4>
+                        <p>Let op dat popups zijn toegestaan in je browser.</p>
+                    </div>
+
+                    <div class="info-box">
+                        <h4>📧 Verzenden met info@infomaatje.nl</h4>
+                        <p>Om te verzenden met het info@infomaatje.nl adres, dien je dit eerst in te stellen bij GMail. Zie: <a href="https://support.google.com/mail/answer/22370?hl=nl" target="_blank">Google Support instructies</a></p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- IE Instellingen -->
+            <article id="ie-instellingen" class="wiki-article">
+                <h2>Instellingen Internet Explorer 11 voor koppeling met Outlook</h2>
+                <div class="article-content">
+                    <h3>Trusted sites toevoegen</h3>
+                    <ol>
+                        <li>Open Internet Explorer</li>
+                        <li>Ga naar website https://infomaatje.jongperspectief.nl</li>
+                        <li>Ga naar instellingen</li>
+                        <li>Open tab-je Security</li>
+                        <li>Klik op Trusted sites</li>
+                        <li>Voeg de website toe aan de lijst</li>
+                        <li>Klik op [close]</li>
+                        <li>Klik op [Custom level]</li>
+                    </ol>
+
+                    <h3>ActiveX instellingen</h3>
+                    <p>Scrol naar 'Active-X controls and plugins' en configureer:</p>
+                    <ul>
+                        <li>Allow ActiveX Filtering: <strong>Enable</strong></li>
+                        <li>Allow previously unused: <strong>Enable</strong></li>
+                        <li>Allow Scriptlets: <strong>Enable</strong></li>
+                        <li>Automatic prompt for ActiveX controls: <strong>Disable</strong></li>
+                        <li>Binary and script behaviors: <strong>Enable</strong></li>
+                        <li>Display video and animation: <strong>Disable</strong></li>
+                        <li>Download signed ActiveX controls: <strong>Enable</strong></li>
+                        <li>Download unsigned ActiveX controls: <strong>Enable</strong></li>
+                        <li>Initialize and script: <strong>Enable</strong></li>
+                        <li>Only allow approved: <strong>Disable</strong></li>
+                        <li>Run ActiveX controls and plugins: <strong>Enable</strong></li>
+                        <li>Run antimalware software: <strong>Disable</strong></li>
+                        <li>Script ActiveX controls marked for: <strong>Enable</strong></li>
+                    </ul>
+                    <p>Klik op [OK] en start Internet Explorer opnieuw op.</p>
+                </div>
+            </article>
+
+            <!-- Weeklies -->
+            <article id="weeklies" class="wiki-article">
+                <h2>Weeklies</h2>
+                <div class="article-content">
+                    <p>Voor het invullen van de Weeklies (en andere vragenlijsten) is een webapp ontwikkeld. Met deze APP kan de Big alle binnen Infomaatje voor hem/haar aangemaakte vragenlijsten beantwoorden.</p>
+
+                    <h3>Benodigdheden</h3>
+                    <ol>
+                        <li><strong>Vragenlijst:</strong> Weekly|Week @weeknummer@: van @week_start@ t/m @week_eind@</li>
+                        <li><strong>Taak:</strong> Big: Mail voor het installeren van de Weekly App</li>
+                        <li><strong>Taak:</strong> Weekly versturen</li>
+                    </ol>
+
+                    <h3>Variabelen in vragenlijst</h3>
+                    <ul>
+                        <li><code>@weeknummer@</code> - Jaar en weeknummer</li>
+                        <li><code>@week_start@</code> - Startdatum van de week</li>
+                        <li><code>@week_eind@</code> - Einddatum van de week</li>
+                    </ul>
+
+                    <h3>APP installatie mail</h3>
+                    <p>Dit is een gewone mail taak met een gepersonaliseerde link (<code>@vw_app@</code>) die de Big toegang verleent tot zijn/haar vragenlijsten. Iedere Big krijgt zijn eigen mail.</p>
+
+                    <h3>Weekly versturen taak</h3>
+                    <p>Configureer de volgende velden:</p>
+                    <ul>
+                        <li><strong>Omschrijving:</strong> Hoe de taak verschijnt in de checklijst</li>
+                        <li><strong>Actie:</strong> AppVragenlijst</li>
+                        <li><strong>Vragenlijst:</strong> Welke vragenlijst wordt aangemaakt</li>
+                        <li><strong>Herhaal taak iedere:</strong> Dag van de week of maand</li>
+                    </ul>
+
+                    <h3>Activeren voor Big</h3>
+                    <p>Beide taken zijn toegevoegd aan de checklijst 'SBM: APP en vragenlijst voor weekly'. Voeg deze checklijst toe aan een koppel dossier.</p>
+                    <p>De Weeklies worden pas klaargezet bij de Big zodra je de taak 'Weekly versturen' activeert (VT aanvinkt). De Weeklies worden klaargezet totdat de koppeling verlopen is.</p>
+
+                    <div class="info-box">
+                        <h4>⏸️ Stopzetten</h4>
+                        <p>Wil je de taak eerder of tijdelijk stopzetten? Vink dan NVT aan.</p>
+                    </div>
+                </div>
+            </article>
+
+        </main>
+    </div>
+
+    <footer class="wiki-footer">
+        <div class="footer-content">
+            <p>&copy; Anan6 Services | E: info@anan6.com | T: 088 243 6499</p>
+        </div>
+    </footer>
+
+    <button id="backToTop" class="back-to-top" title="Terug naar boven">↑</button>
+
+    <script>
+        // Smooth scrolling voor navigatie links
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+                
+                if (targetElement) {
+                    targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    
+                    // Update active state
+                    document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
+                    this.classList.add('active');
+                }
+            });
+        });
+
+        // Zoekfunctionaliteit
+        const searchInput = document.getElementById('searchInput');
+        const searchResults = document.getElementById('searchResults');
+        const articles = document.querySelectorAll('.wiki-article');
+
+        searchInput.addEventListener('input', function() {
+            const query = this.value.toLowerCase().trim();
+            
+            if (query.length < 2) {
+                searchResults.style.display = 'none';
+                return;
+            }
+
+            const results = [];
+            articles.forEach(article => {
+                const title = article.querySelector('h2').textContent;
+                const content = article.textContent.toLowerCase();
+                
+                if (content.includes(query)) {
+                    const excerpt = getExcerpt(article.textContent, query);
+                    results.push({
+                        id: article.id,
+                        title: title,
+                        excerpt: excerpt
+                    });
+                }
+            });
+
+            displaySearchResults(results);
+        });
+
+        function getExcerpt(text, query) {
+            const index = text.toLowerCase().indexOf(query);
+            if (index === -1) return '';
+            
+            const start = Math.max(0, index - 50);
+            const end = Math.min(text.length, index + query.length + 50);
+            let excerpt = text.substring(start, end).trim();
+            
+            if (start > 0) excerpt = '...' + excerpt;
+            if (end < text.length) excerpt = excerpt + '...';
+            
+            return excerpt;
+        }
+
+        function displaySearchResults(results) {
+            if (results.length === 0) {
+                searchResults.innerHTML = '<div class="no-results">Geen resultaten gevonden</div>';
+            } else {
+                searchResults.innerHTML = results.map(result => `
+                    <div class="search-result-item" onclick="goToArticle('${result.id}')">
+                        <div class="result-title">${result.title}</div>
+                        <div class="result-excerpt">${result.excerpt}</div>
+                    </div>
+                `).join('');
+            }
+            searchResults.style.display = 'block';
+        }
+
+        function goToArticle(id) {
+            const element = document.getElementById(id);
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                searchResults.style.display = 'none';
+                searchInput.value = '';
+                
+                // Highlight the article briefly
+                element.classList.add('highlight');
+                setTimeout(() => element.classList.remove('highlight'), 2000);
+            }
+        }
+
+        // Sluit zoekresultaten bij klik buiten
+        document.addEventListener('click', function(e) {
+            if (!searchInput.contains(e.target) && !searchResults.contains(e.target)) {
+                searchResults.style.display = 'none';
+            }
+        });
+
+        // Back to top button
+        const backToTopButton = document.getElementById('backToTop');
+        
+        window.addEventListener('scroll', function() {
+            if (window.pageYOffset > 300) {
+                backToTopButton.style.display = 'block';
+            } else {
+                backToTopButton.style.display = 'none';
+            }
+        });
+
+        backToTopButton.addEventListener('click', function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Update active nav link on scroll
+        window.addEventListener('scroll', function() {
+            let current = '';
+            articles.forEach(article => {
+                const sectionTop = article.offsetTop - 100;
+                if (pageYOffset >= sectionTop) {
+                    current = article.getAttribute('id');
+                }
+            });
+
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
