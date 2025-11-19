@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Infomaatje</title>
-      <link rel="shortcut icon" href="img/Logo i + shadow.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="img/Logo i + shadow.png" type="image/x-icon" />
 
     <link rel="stylesheet" href="css/style.css?v=999">
 </head>
@@ -19,7 +19,15 @@
             <div class="logo">
                 <img src="/img/Logo-infomaatje.png" alt="Infomaatjes Logo">
             </div>
-            <ul class="nav-menu">
+
+            <!-- Hamburger Menu Button (alleen zichtbaar op mobiel/tablet) -->
+            <button class="hamburger" id="hamburger" aria-label="Menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+
+            <ul class="nav-menu" id="navMenu">
                 <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
                 <li class="nav-item"><a href="#wat-is" class="nav-link">Wat is Infomaatje?</a></li>
                 <li class="nav-item"><a href="#over" class="nav-link">Over Infomaatje</a></li>
@@ -94,7 +102,8 @@
 
                 <div class="wat-is-right">
                     <p class="intro-text">
-                        Infomaatje biedt een overzichtelijk dashboard waar je in &eacute;&eacute;n oogopslag alle belangrijke
+                        Infomaatje biedt een overzichtelijk dashboard waar je in &eacute;&eacute;n oogopslag alle
+                        belangrijke
                         informatie ziet.
                         Beheer eenvoudig aanmeldingen, houd vragenlijsten bij, en volg de voortgang van je koppelingen.
                         Alles is georganiseerd en direct toegankelijk, zodat je snel kunt handelen en rapporteren
@@ -102,7 +111,8 @@
                     </p>
 
                     <div class="image-placeholder-vertical">
-                        <img class="parkeerplaats" src="/img/Informaatje-parkeerplaats.png" alt="Infomaatje Dashboard" longdesc="" width="" height="">
+                        <img class="parkeerplaats" src="/img/Informaatje-parkeerplaats.png" alt="Infomaatje Dashboard"
+                            longdesc="" width="" height="">
                     </div>
                 </div>
             </div>
@@ -121,7 +131,8 @@
 
                     <p class="over-quote">
                         <em>Onze missie: "maatschappelijke professionals verlichten van administratieve druk, zodat zij
-                            zich kunnen richten op wat &eacute;cht belangrijk is - betekenisvol contact tussen mensen."</em>
+                            zich kunnen richten op wat &eacute;cht belangrijk is - betekenisvol contact tussen
+                            mensen."</em>
                     </p>
 
                     <h4>Onze Kernwaarden:</h4>
@@ -162,8 +173,8 @@
 
                         <div class="project-item">
                             <div class="project-placeholder">
-                                 <a href="https://www.budgetmaatjes070.nl">
-                                    <img src= "/img/budgetmaatjes-logo.png" alt="">
+                                <a href="https://www.budgetmaatjes070.nl">
+                                    <img src="/img/budgetmaatjes-logo.png" alt="">
                                 </a>
                             </div>
 
@@ -173,12 +184,12 @@
 
                         <div class="project-item">
                             <div class="project-placeholder">
-                                 <a href="https://www.jongperspectief.nl">
+                                <a href="https://www.jongperspectief.nl">
                                     <img src="/img/jongperspectief-logo.png" alt="">
                                 </a>
                             </div>
-                                
-                           
+
+
 
                             <p class="project-quote">"quote"</p>
                         </div>
@@ -240,6 +251,7 @@
             <p>&copy; 2025 Informaatjes. Alle rechten voorbehouden.</p>
         </div>
     </footer>
+    <script src="js/menu.js"></script>
 </body>
 
 </html>
