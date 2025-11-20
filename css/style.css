@@ -838,92 +838,139 @@ h3 {
 .footer-link {
     font-style: italic;
 }
-
-/* Tablet (1024px en kleiner) */
 @media screen and (max-width: 1024px) {
-
-    /* Activeer hamburger menu */
+    /* Activeer Hamburger Menu */
     .hamburger {
         display: flex;
-        z-index: 10001;
     }
-
+    
     .nav-container {
         flex-direction: column;
         align-items: flex-start;
-        padding: 0 20px;
+        padding: 10px 20px;
     }
-
-    /* Dropdown menu van boven naar beneden */
-  .nav-menu {
+    
+    /* Dropdown Menu Styling - GEFIXTE VERSIE */
+    .nav-menu {
         position: relative;
         right: auto;
         top: auto;
-        height: 0;
+        height: auto; /* CHANGED: was 0 */
         width: 100%;
         max-height: 0;
         background: linear-gradient(135deg, #1f497d 0%, #2d5a8f 100%);
         flex-direction: column;
-        padding: 0 20px;
+        padding: 0;
         overflow: hidden;
         transition: max-height 0.4s ease, padding 0.4s ease;
         z-index: 10000;
         border-radius: 0 0 15px 15px;
         margin-top: 10px;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        gap: 0; /* ADDED */
     }
-
+    
     .nav-menu.active {
-        max-height: 400px;
-        /* Past zich aan aan inhoud */
-        padding: 15px 20px;
+        max-height: 500px; /* VERHOOGD van 400px naar 500px */
+        padding: 15px 0; /* CHANGED: was 15px 20px */
     }
-
+    
     .nav-menu li {
         width: 100%;
         text-align: center;
         border-right: none !important;
         border-bottom: 1px solid rgba(255, 255, 255, 0.2) !important;
-        padding: 12px 15px !important;
+        padding: 15px 20px !important; /* VERHOOGD */
         margin-bottom: 0;
-        opacity: 0;
-        transform: translateY(-10px);
-        transition: opacity 0.3s ease, transform 0.3s ease;
+        opacity: 1; /* CHANGED: was 0, nu altijd 1 */
+        transform: none; /* CHANGED: geen transform meer */
+        transition: background-color 0.3s ease; /* SIMPLIFIED */
     }
-
-    /* Animatie voor menu items */
+    
+    /* VERWIJDER de staggered animaties - deze geven problemen */
     .nav-menu.active li {
         opacity: 1;
         transform: translateY(0);
     }
-
-    .nav-menu.active li:nth-child(1) {
-        transition-delay: 0.1s;
+    
+    /* Verwijder individuele delays - vaak probleem */
+    
+    .nav-menu li:hover {
+        background-color: rgba(255, 255, 255, 0.15);
     }
-
-    .nav-menu.active li:nth-child(2) {
-        transition-delay: 0.15s;
-    }
-
-    .nav-menu.active li:nth-child(3) {
-        transition-delay: 0.2s;
-    }
-
-    .nav-menu.active li:nth-child(4) {
-        transition-delay: 0.25s;
-    }
-
+    
     .nav-menu li:last-child {
         border-bottom: none !important;
     }
-
+    
     .nav-link {
         color: #ffffff !important;
-        font-size: 16px !important;
+        font-size: 18px !important; /* VERHOOGD van 16px */
+        font-weight: 600 !important; /* ADDED */
+        display: block; /* ADDED */
     }
-
+    
     .nav-link:hover {
         color: #92D050 !important;
+        opacity: 1;
+        text-decoration: none;
+    }
+    
+    /* Rest van tablet styling... */
+    .container-medium {
+        margin: 0 auto;
+        max-width: 100%;
+        background-color: transparent;
+        box-shadow: none;
+    }
+    
+    .welcome {
+        background: linear-gradient(135deg, #f8fbff 0%, #e8f4f8 50%, #f0f7ff 100%);
+        border-radius: 0;
+        padding: 40px 40px;
+    }
+    
+    #wat-is {
+        background: linear-gradient(135deg, #f0fff4 0%, #e8f5e9 50%, #f1f8e9 100%);
+        padding: 40px 40px;
+    }
+    
+    #over {
+        background: linear-gradient(135deg, #f8f9ff 0%, #eef2ff 50%, #f0f4ff 100%);
+        padding: 40px 40px;
+    }
+    
+    #demo {
+        padding: 40px 40px;
+    }
+    
+    .home-content,
+    .wat-is-content,
+    .over-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    
+    .demo-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    
+    .home-left h1 {
+        font-size: 32px;
+    }
+    
+    .section-title {
+        margin-bottom: 35px;
+    }
+    
+    .section-divider {
+        margin: 40px auto;
+        max-width: 70%;
     }
 }
 
@@ -932,251 +979,206 @@ h3 {
     body {
         font-size: 14px;
     }
-
-    .container-medium {
-        margin: 0;
-        max-width: 100%;
-        background-color: transparent;
-        box-shadow: none;
-    }
-
+    
     /* Navigation */
-    .navbar-infomaatjes {
-        padding: 15px 20px;
-    }
-
-    .nav-container {
-        flex-direction: column;
-        gap: 15px;
-        max-width: 600px;
-        margin: 0 auto;
-    }
-
-    .logo img {
-        height: 50px;
-    }
-
     .nav-menu {
         padding: 0 15px;
     }
-
+    
     .nav-menu.active {
         padding: 12px 15px;
         max-height: 350px;
     }
-
+    
     .nav-menu li {
-        width: 100%;
-        text-align: center;
-        border-right: none !important;
-        border-bottom: 2px solid #3A5F8F !important;
-         padding: 10px 12px !important;
+        padding: 10px 12px !important;
     }
-
-    .nav-menu li:last-child {
-        border-bottom: none !important;
-    }
-
+    
     .nav-link {
-         font-size: 15px !important;
+        font-size: 15px !important;
     }
-
-    /* Home Section */
+    
+    .logo img {
+        height: 50px;
+    }
+    
+    /* Sections */
     .welcome {
         padding: 30px 25px;
-        border-radius: 0;
     }
-
+    
     .home-content {
         max-width: 600px;
-        margin: 0 auto;
     }
-
+    
     .title-with-icon {
         flex-direction: column;
         text-align: center;
         gap: 15px;
     }
-
+    
     .mascot-logo-small {
         width: 80px;
     }
-
+    
     .home-left h1 {
         font-size: 26px;
         text-align: center;
     }
-
+    
     .home-subtitle {
         font-size: 18px;
         text-align: center;
-        display: block;
     }
-
+    
     .home-text {
         font-size: 16px;
         padding: 20px;
     }
-
+    
     .home-right {
         padding: 20px;
     }
-
+    
     .features-list li {
         font-size: 16px;
         padding: 12px 15px 12px 45px;
     }
-
-    /* Section Titles */
+    
     .section-title {
         font-size: 28px;
         margin-bottom: 30px;
     }
-
+    
     .section-divider {
         margin: 30px auto;
         max-width: 80%;
     }
-
-    /* Wat is Section */
+    
     #wat-is {
         padding: 30px 25px;
     }
-
+    
     .wat-is-content {
         max-width: 600px;
-        margin: 0 auto;
     }
-
-    .problem-box,
-    .solution-box {
+    
+    .problem-box, .solution-box {
         padding: 20px;
     }
-
-    .problem-box h3,
-    .solution-box h3 {
+    
+    .problem-box h3, .solution-box h3 {
         font-size: 18px;
     }
-
-    .problem-box ul li,
-    .solution-box ul li {
+    
+    .problem-box ul li, .solution-box ul li {
         font-size: 15px;
         padding-left: 25px;
     }
-
+    
     .intro-text {
         font-size: 15px;
         padding: 20px;
     }
-
+    
     .image-placeholder-vertical {
         padding: 15px;
     }
-
-    .parkeerplaats {
-        padding: 0;
-    }
-
-    /* Over Section */
+    
     #over {
         padding: 30px 25px;
     }
-
+    
     .over-content {
         max-width: 600px;
-        margin: 0 auto;
     }
-
+    
     .over-subtitle {
         font-size: 22px;
         padding: 15px;
     }
-
+    
     .over-quote {
         font-size: 15px;
         padding: 20px;
     }
-
+    
     .over-quote::before {
         font-size: 60px;
         top: -15px;
         left: 15px;
     }
-
+    
     .over-left h4 {
         font-size: 20px;
     }
-
+    
     .kernwaarden-list li {
         font-size: 15px;
         padding: 10px 15px 10px 40px;
     }
-
+    
     .over-right {
         padding: 20px;
     }
-
+    
     .projecten-grid {
         grid-template-columns: 1fr 1fr;
         gap: 10px;
     }
-
+    
     .project-placeholder {
         height: 100px;
     }
-
+    
     .project-quote {
         font-size: 12px;
     }
-
-    /* Demo Section */
+    
     #demo {
         padding: 30px 25px;
     }
-
+    
     .demo-content {
         padding: 25px 20px;
         max-width: 600px;
-        margin: 0 auto;
     }
-
+    
     .demo-subtitle {
         font-size: 22px;
     }
-
+    
     .demo-list li {
         font-size: 15px;
         padding-left: 30px;
     }
-
+    
     .demo-button {
         padding: 15px 40px;
         font-size: 18px;
     }
-
-    /* Footer */
+    
     .footer {
         font-size: 14px;
         padding: 30px 25px;
     }
-
+    
     .footer-container {
         grid-template-columns: 1fr;
         gap: 25px;
         text-align: center;
         max-width: 600px;
-        margin: 0 auto;
     }
-
+    
     .footer-column h3 {
         font-size: 18px;
     }
-
+    
     .footer-bottom {
         font-size: 12px;
         max-width: 600px;
     }
-
+    
     .footer-gradient {
         height: 50px;
     }
@@ -1184,148 +1186,137 @@ h3 {
 
 /* Small Mobile (480px en kleiner) */
 @media screen and (max-width: 480px) {
-    .container-medium {
-        margin: 0;
-        max-width: 100%;
-    }
-
     .logo img {
         height: 40px;
     }
-
+    
     .nav-link {
         font-size: 14px !important;
     }
-
+    
     .nav-container {
-        max-width: 100%;
-        padding: 0 15px;
+        padding: 10px 15px;
     }
-
+    
     .welcome {
         padding: 20px 20px;
     }
-
+    
     .home-content {
         max-width: 100%;
         padding: 0 5px;
     }
-
+    
     .home-left h1 {
         font-size: 22px;
     }
-
+    
     .home-subtitle {
         font-size: 16px;
         padding: 10px 15px;
     }
-
+    
     .home-text {
         font-size: 14px;
         padding: 15px;
     }
-
+    
     .mascot-logo-small {
         width: 60px;
         padding: 10px;
     }
-
-    #wat-is,
-    #over,
-    #demo {
+    
+    #wat-is, #over, #demo {
         padding: 20px 20px;
     }
-
+    
     .wat-is-content,
     .over-content,
     .demo-content {
         max-width: 100%;
         padding: 0 5px;
     }
-
+    
     .section-title {
         font-size: 24px;
         margin-bottom: 25px;
     }
-
+    
     .section-divider {
         margin: 20px auto;
         height: 3px;
         max-width: 85%;
     }
-
-    .problem-box,
-    .solution-box {
+    
+    .problem-box, .solution-box {
         padding: 15px;
     }
-
-    .problem-box h3,
-    .solution-box h3 {
+    
+    .problem-box h3, .solution-box h3 {
         font-size: 16px;
     }
-
-    .problem-box ul li,
-    .solution-box ul li {
+    
+    .problem-box ul li, .solution-box ul li {
         font-size: 14px;
         padding-left: 22px;
     }
-
+    
     .over-subtitle {
         font-size: 18px;
         padding: 12px;
     }
-
+    
     .over-quote {
         font-size: 14px;
         padding: 15px 20px;
     }
-
+    
     .over-quote::before {
         font-size: 50px;
         top: -10px;
     }
-
+    
     .projecten-grid {
         grid-template-columns: 1fr;
         gap: 15px;
     }
-
+    
     .project-placeholder {
         height: 120px;
     }
-
+    
     .demo-content {
         padding: 20px 15px;
     }
-
+    
     .demo-subtitle {
         font-size: 18px;
     }
-
+    
     .demo-list li {
         font-size: 14px;
         padding-left: 25px;
     }
-
+    
     .demo-button {
         padding: 12px 30px;
         font-size: 16px;
         width: 100%;
     }
-
+    
     .footer {
         padding: 20px 20px;
     }
-
+    
     .footer-container {
         max-width: 100%;
         padding: 0 5px;
     }
-
+    
     .footer-column h3 {
         font-size: 16px;
     }
-
+    
     .footer-column p {
         font-size: 13px;
     }
@@ -1336,25 +1327,22 @@ h3 {
     .home-left h1 {
         font-size: 20px;
     }
-
+    
     .section-title {
         font-size: 22px;
         margin-bottom: 20px;
     }
-
+    
     .home-subtitle {
         font-size: 14px;
     }
-
+    
     .demo-button {
         font-size: 14px;
         padding: 10px 20px;
     }
-
-    .welcome,
-    #wat-is,
-    #over,
-    #demo {
+    
+    .welcome, #wat-is, #over, #demo {
         padding: 20px 15px;
     }
 }
