@@ -838,112 +838,151 @@ h3 {
 .footer-link {
     font-style: italic;
 }
+
 @media screen and (max-width: 1024px) {
-    /* Activeer Hamburger Menu */
+
+    /* Activeer Hamburger Menu - RECHTS gepositioneerd */
     .hamburger {
-        display: flex;
+        display: flex !important;
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 10001;
     }
-    
+
     .nav-container {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 10px 20px;
-    }
-    
-    /* Dropdown Menu Styling - GEFIXTE VERSIE */
-    .nav-menu {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 60px;
         position: relative;
-        right: auto;
-        top: auto;
-        height: auto; /* CHANGED: was 0 */
+    }
+
+    .logo {
+        flex: 1;
+        text-align: center;
+    }
+
+    .logo img {
+        height: 50px;
+    }
+
+
+    .nav-menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        height: auto;
         width: 100%;
         max-height: 0;
         background: linear-gradient(135deg, #1f497d 0%, #2d5a8f 100%);
         flex-direction: column;
         padding: 0;
         overflow: hidden;
-        transition: max-height 0.4s ease, padding 0.4s ease;
+        transition: max-height 0.3s ease, padding 0.3s ease;
         z-index: 10000;
         border-radius: 0 0 15px 15px;
-        margin-top: 10px;
+        margin-top: 0;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-        gap: 0; /* ADDED */
+        gap: 0;
     }
-    
+
     .nav-menu.active {
-        max-height: 500px; /* VERHOOGD van 400px naar 500px */
-        padding: 15px 0; /* CHANGED: was 15px 20px */
+        max-height: 500px;
+        padding: 15px 0;
     }
-    
+
     .nav-menu li {
         width: 100%;
         text-align: center;
         border-right: none !important;
         border-bottom: 1px solid rgba(255, 255, 255, 0.2) !important;
-        padding: 15px 20px !important; /* VERHOOGD */
+        padding: 15px 20px !important;
         margin-bottom: 0;
-        opacity: 1; /* CHANGED: was 0, nu altijd 1 */
-        transform: none; /* CHANGED: geen transform meer */
-        transition: background-color 0.3s ease; /* SIMPLIFIED */
+        opacity: 1;
+        transform: none;
+        transition: background-color 0.3s ease;
     }
-    
-    /* VERWIJDER de staggered animaties - deze geven problemen */
+
+
     .nav-menu.active li {
         opacity: 1;
         transform: translateY(0);
     }
-    
-    /* Verwijder individuele delays - vaak probleem */
-    
+
+
+
     .nav-menu li:hover {
         background-color: rgba(255, 255, 255, 0.15);
     }
-    
+
     .nav-menu li:last-child {
         border-bottom: none !important;
     }
-    
+
     .nav-link {
         color: #ffffff !important;
-        font-size: 18px !important; /* VERHOOGD van 16px */
-        font-weight: 600 !important; /* ADDED */
-        display: block; /* ADDED */
+        font-size: 18px !important;
+        font-weight: 600 !important;
+        display: block;
     }
-    
+
     .nav-link:hover {
         color: #92D050 !important;
         opacity: 1;
         text-decoration: none;
     }
-    
-    /* Rest van tablet styling... */
+
+
     .container-medium {
         margin: 0 auto;
         max-width: 100%;
         background-color: transparent;
         box-shadow: none;
     }
-    
+
+    .title-with-icon {
+        flex-direction: row !important;
+        /* Horizontaal ipv column */
+        align-items: flex-start;
+        text-align: left;
+        gap: 20px;
+    }
+
+    .mascot-logo-small {
+        width: 100px;
+        min-width: 100px;
+        flex-shrink: 0;
+    }
+
+    .title-with-icon h1 {
+        flex: 1;
+        margin: 0;
+        text-align: left;
+    }
+
     .welcome {
         background: linear-gradient(135deg, #f8fbff 0%, #e8f4f8 50%, #f0f7ff 100%);
         border-radius: 0;
         padding: 40px 40px;
     }
-    
+
     #wat-is {
         background: linear-gradient(135deg, #f0fff4 0%, #e8f5e9 50%, #f1f8e9 100%);
         padding: 40px 40px;
     }
-    
+
     #over {
         background: linear-gradient(135deg, #f8f9ff 0%, #eef2ff 50%, #f0f4ff 100%);
         padding: 40px 40px;
     }
-    
+
     #demo {
         padding: 40px 40px;
     }
-    
+
     .home-content,
     .wat-is-content,
     .over-content {
@@ -952,22 +991,22 @@ h3 {
         max-width: 800px;
         margin: 0 auto;
     }
-    
+
     .demo-content {
         grid-template-columns: 1fr;
         gap: 30px;
         max-width: 800px;
         margin: 0 auto;
     }
-    
+
     .home-left h1 {
         font-size: 32px;
     }
-    
+
     .section-title {
         margin-bottom: 35px;
     }
-    
+
     .section-divider {
         margin: 40px auto;
         max-width: 70%;
@@ -979,206 +1018,227 @@ h3 {
     body {
         font-size: 14px;
     }
-    
+
+    /* Hamburger rechts positionering */
+    .hamburger {
+        right: 15px;
+    }
+
+    .nav-container {
+        padding: 10px 55px;
+    }
+
     /* Navigation */
     .nav-menu {
-        padding: 0 15px;
+        padding: 0;
     }
-    
+
     .nav-menu.active {
-        padding: 12px 15px;
+        padding: 10px 0;
         max-height: 350px;
     }
-    
+
     .nav-menu li {
         padding: 10px 12px !important;
     }
-    
+
     .nav-link {
-        font-size: 15px !important;
+        font-size: 16px !important;
     }
-    
+
     .logo img {
-        height: 50px;
+        height: 45px;
     }
-    
+
+    .title-with-icon {
+        gap: 15px;
+    }
+
+    .mascot-logo-small {
+        width: 80px;
+        min-width: 80px;
+    }
+
     /* Sections */
     .welcome {
         padding: 30px 25px;
     }
-    
+
     .home-content {
         max-width: 600px;
     }
-    
+
     .title-with-icon {
         flex-direction: column;
         text-align: center;
         gap: 15px;
     }
-    
+
     .mascot-logo-small {
         width: 80px;
     }
-    
+
     .home-left h1 {
         font-size: 26px;
         text-align: center;
     }
-    
+
     .home-subtitle {
         font-size: 18px;
         text-align: center;
     }
-    
+
     .home-text {
         font-size: 16px;
         padding: 20px;
     }
-    
+
     .home-right {
         padding: 20px;
     }
-    
+
     .features-list li {
         font-size: 16px;
         padding: 12px 15px 12px 45px;
     }
-    
+
     .section-title {
         font-size: 28px;
         margin-bottom: 30px;
     }
-    
+
     .section-divider {
         margin: 30px auto;
         max-width: 80%;
     }
-    
+
     #wat-is {
         padding: 30px 25px;
     }
-    
+
     .wat-is-content {
         max-width: 600px;
     }
-    
-    .problem-box, .solution-box {
+
+    .problem-box,
+    .solution-box {
         padding: 20px;
     }
-    
-    .problem-box h3, .solution-box h3 {
+
+    .problem-box h3,
+    .solution-box h3 {
         font-size: 18px;
     }
-    
-    .problem-box ul li, .solution-box ul li {
+
+    .problem-box ul li,
+    .solution-box ul li {
         font-size: 15px;
         padding-left: 25px;
     }
-    
+
     .intro-text {
         font-size: 15px;
         padding: 20px;
     }
-    
+
     .image-placeholder-vertical {
         padding: 15px;
     }
-    
+
     #over {
         padding: 30px 25px;
     }
-    
+
     .over-content {
         max-width: 600px;
     }
-    
+
     .over-subtitle {
         font-size: 22px;
         padding: 15px;
     }
-    
+
     .over-quote {
         font-size: 15px;
         padding: 20px;
     }
-    
+
     .over-quote::before {
         font-size: 60px;
         top: -15px;
         left: 15px;
     }
-    
+
     .over-left h4 {
         font-size: 20px;
     }
-    
+
     .kernwaarden-list li {
         font-size: 15px;
         padding: 10px 15px 10px 40px;
     }
-    
+
     .over-right {
         padding: 20px;
     }
-    
+
     .projecten-grid {
         grid-template-columns: 1fr 1fr;
         gap: 10px;
     }
-    
+
     .project-placeholder {
         height: 100px;
     }
-    
+
     .project-quote {
         font-size: 12px;
     }
-    
+
     #demo {
         padding: 30px 25px;
     }
-    
+
     .demo-content {
         padding: 25px 20px;
         max-width: 600px;
     }
-    
+
     .demo-subtitle {
         font-size: 22px;
     }
-    
+
     .demo-list li {
         font-size: 15px;
         padding-left: 30px;
     }
-    
+
     .demo-button {
         padding: 15px 40px;
         font-size: 18px;
     }
-    
+
     .footer {
         font-size: 14px;
         padding: 30px 25px;
     }
-    
+
     .footer-container {
         grid-template-columns: 1fr;
         gap: 25px;
         text-align: center;
         max-width: 600px;
     }
-    
+
     .footer-column h3 {
         font-size: 18px;
     }
-    
+
     .footer-bottom {
         font-size: 12px;
         max-width: 600px;
     }
-    
+
     .footer-gradient {
         height: 50px;
     }
@@ -1186,137 +1246,159 @@ h3 {
 
 /* Small Mobile (480px en kleiner) */
 @media screen and (max-width: 480px) {
+
+    /* Hamburger rechts - kleiner formaat */
+    .hamburger {
+        right: 10px;
+        width: 28px;
+        height: 23px;
+    }
+
+    .hamburger-line {
+        height: 2.5px;
+    }
+
     .logo img {
         height: 40px;
     }
-    
+
     .nav-link {
-        font-size: 14px !important;
+        font-size: 15px !important;
     }
-    
+
     .nav-container {
-        padding: 10px 15px;
+        padding: 10px 50px;
     }
-    
+
+    .mascot-logo-small {
+        width: 70px;
+        min-width: 70px;
+    }
+
     .welcome {
         padding: 20px 20px;
     }
-    
+
     .home-content {
         max-width: 100%;
         padding: 0 5px;
     }
-    
+
     .home-left h1 {
         font-size: 22px;
     }
-    
+
     .home-subtitle {
         font-size: 16px;
         padding: 10px 15px;
     }
-    
+
     .home-text {
         font-size: 14px;
         padding: 15px;
     }
-    
+
     .mascot-logo-small {
         width: 60px;
         padding: 10px;
     }
-    
-    #wat-is, #over, #demo {
+
+    #wat-is,
+    #over,
+    #demo {
         padding: 20px 20px;
     }
-    
+
     .wat-is-content,
     .over-content,
     .demo-content {
         max-width: 100%;
         padding: 0 5px;
     }
-    
+
     .section-title {
         font-size: 24px;
         margin-bottom: 25px;
     }
-    
+
     .section-divider {
         margin: 20px auto;
         height: 3px;
         max-width: 85%;
     }
-    
-    .problem-box, .solution-box {
+
+    .problem-box,
+    .solution-box {
         padding: 15px;
     }
-    
-    .problem-box h3, .solution-box h3 {
+
+    .problem-box h3,
+    .solution-box h3 {
         font-size: 16px;
     }
-    
-    .problem-box ul li, .solution-box ul li {
+
+    .problem-box ul li,
+    .solution-box ul li {
         font-size: 14px;
         padding-left: 22px;
     }
-    
+
     .over-subtitle {
         font-size: 18px;
         padding: 12px;
     }
-    
+
     .over-quote {
         font-size: 14px;
         padding: 15px 20px;
     }
-    
+
     .over-quote::before {
         font-size: 50px;
         top: -10px;
     }
-    
+
     .projecten-grid {
         grid-template-columns: 1fr;
         gap: 15px;
     }
-    
+
     .project-placeholder {
         height: 120px;
     }
-    
+
     .demo-content {
         padding: 20px 15px;
     }
-    
+
     .demo-subtitle {
         font-size: 18px;
     }
-    
+
     .demo-list li {
         font-size: 14px;
         padding-left: 25px;
     }
-    
+
     .demo-button {
         padding: 12px 30px;
         font-size: 16px;
         width: 100%;
     }
-    
+
     .footer {
         padding: 20px 20px;
     }
-    
+
     .footer-container {
         max-width: 100%;
         padding: 0 5px;
     }
-    
+
     .footer-column h3 {
         font-size: 16px;
     }
-    
+
     .footer-column p {
         font-size: 13px;
     }
@@ -1327,22 +1409,25 @@ h3 {
     .home-left h1 {
         font-size: 20px;
     }
-    
+
     .section-title {
         font-size: 22px;
         margin-bottom: 20px;
     }
-    
+
     .home-subtitle {
         font-size: 14px;
     }
-    
+
     .demo-button {
         font-size: 14px;
         padding: 10px 20px;
     }
-    
-    .welcome, #wat-is, #over, #demo {
+
+    .welcome,
+    #wat-is,
+    #over,
+    #demo {
         padding: 20px 15px;
     }
 }
