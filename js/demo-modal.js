@@ -53,12 +53,9 @@ demoForm.addEventListener('submit', function(e) {
     const requiredFields = demoForm.querySelectorAll('[required]');
     
     requiredFields.forEach(field => {
-        if (!field.value.trim() && field.type !== 'checkbox') {
+        if (!field.value.trim()) {
             field.classList.add('error');
             isValid = false;
-        } else if (field.type === 'checkbox' && !field.checked) {
-            isValid = false;
-            alert('Je moet akkoord gaan met de privacyverklaring.');
         } else {
             field.classList.remove('error');
         }
@@ -77,54 +74,42 @@ demoForm.addEventListener('submit', function(e) {
         return;
     }
 
-    // Log data (in productie verstuur je dit naar je backend)
-    console.log('Demo aanvraag:', {
-        organisatie,
-        naam,
-        email,
-        telefoon: telefoon || 'Niet opgegeven'
-    });
-
-    /* 
-    ==================================================================
-    BACKEND INTEGRATIE:
-    In productie verstuur je de data naar je backend met fetch:
-    ==================================================================
-    
-    fetch('/api/demo-request', {
+    // Verstuur data naar backend
+    fetch('send-demo-request.php', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
             organisatie,
             naam,
             email,
-            telefoon
+            telefoon: telefoon || 'Niet opgegeven'
         })
     })
     .then(response => response.json())
     .then(data => {
-        // Show success message
+        if (data.success) {
+            // Hide form, show success message
+            demoForm.style.display = 'none';
+            successMessage.classList.add('active');
+
+            // Fill in confirmation details
+            document.getElementById('confirmNaam').textContent = naam;
+            document.getElementById('confirmEmail').textContent = email;
+            
+            // Add phone if provided
+            if (telefoon) {
+                document.getElementById('confirmTelefoonText').textContent = ' of ' + telefoon;
+            } else {
+                document.getElementById('confirmTelefoonText').textContent = '';
+            }
+        } else {
+            alert('Er is een fout opgetreden: ' + data.message);
+        }
     })
     .catch(error => {
         console.error('Error:', error);
-        alert('Er is iets misgegaan. Probeer het later opnieuw.');
+        alert('Er is iets misgegaan bij het verzenden. Probeer het later opnieuw of neem direct contact op via info@infomaatje.org');
     });
-    */
-
-    // Hide form, show success message
-    demoForm.style.display = 'none';
-    successMessage.classList.add('active');
-
-    // Fill in confirmation details
-    document.getElementById('confirmNaam').textContent = naam;
-    document.getElementById('confirmEmail').textContent = email;
-    
-    // Add phone if provided
-    if (telefoon) {
-        document.getElementById('confirmTelefoonText').textContent = ' of ' + telefoon;
-    } else {
-        document.getElementById('confirmTelefoonText').textContent = '';
-    }
 });
 
 // Remove error styling on input
