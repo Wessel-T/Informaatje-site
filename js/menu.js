@@ -8,6 +8,13 @@ document.addEventListener('DOMContentLoaded', function() {
     hamburger.addEventListener('click', function() {
         hamburger.classList.toggle('active');
         navMenu.classList.toggle('active');
+        
+        // Toggle body scroll lock
+        if (navMenu.classList.contains('active')) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = '';
+        }
     });
     
     // Sluit menu wanneer op een link wordt geklikt
@@ -15,6 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
         link.addEventListener('click', function() {
             hamburger.classList.remove('active');
             navMenu.classList.remove('active');
+            document.body.style.overflow = '';
         });
     });
     
@@ -26,6 +34,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (!isClickInsideHamburger && !isClickInsideMenu && navMenu.classList.contains('active')) {
             hamburger.classList.remove('active');
             navMenu.classList.remove('active');
+            document.body.style.overflow = '';
         }
     });
     
@@ -34,6 +43,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (e.key === 'Escape' && navMenu.classList.contains('active')) {
             hamburger.classList.remove('active');
             navMenu.classList.remove('active');
+            document.body.style.overflow = '';
         }
     });
 });
