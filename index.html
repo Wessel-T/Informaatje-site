@@ -219,7 +219,7 @@
 
                 <div class="demo-right">
                     <h4>Demo aanvraag</h4>
-                    <a href="#demo-form" class="demo-button">Demo</a>
+                    <button onclick="openDemoModal()" class="demo-button">Plan een Demo</button>
                 </div>
             </div>
         </section>
@@ -251,7 +251,99 @@
             <p>&copy; 2025 Informaatje. Alle rechten voorbehouden.</p>
         </div>
     </footer>
+    <!-- DEMO POPUP MODAL -->
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal">
+            <!-- Close button -->
+            <button class="close-modal" onclick="closeDemoModal()">&times;</button>
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h2>📅 Plan een Demo</h2>
+                <p>Vul je gegevens in en we nemen binnen 24 uur contact op</p>
+            </div>
+
+            <!-- Modal Body -->
+            <div class="modal-body">
+                <!-- Form -->
+                <form id="demoForm">
+                    <div class="form-group">
+                        <label for="organisatie">Organisatie <span class="required">*</span></label>
+                        <input 
+                            type="text" 
+                            id="organisatie" 
+                            name="organisatie" 
+                            placeholder="Bijv. Stichting Maatjesproject Amsterdam"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="naam">Naam contactpersoon <span class="required">*</span></label>
+                        <input 
+                            type="text" 
+                            id="naam" 
+                            name="naam" 
+                            placeholder="Bijv. Jan Jansen"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">E-mailadres <span class="required">*</span></label>
+                        <input 
+                            type="email" 
+                            id="email" 
+                            name="email" 
+                            placeholder="naam@organisatie.nl"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="telefoon">Telefoonnummer (optioneel)</label>
+                        <input 
+                            type="tel" 
+                            id="telefoon" 
+                            name="telefoon" 
+                            placeholder="06-12345678"
+                        >
+                        <p class="form-hint">We gebruiken dit om je te bellen voor de demo planning</p>
+                    </div>
+
+                    <!-- Privacy checkbox -->
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="privacy" name="privacy" required>
+                        <label for="privacy">
+                            Ik ga akkoord met de <a href="#" target="_blank">privacyverklaring</a> en geef toestemming om contact met mij op te nemen. <span class="required">*</span>
+                        </label>
+                    </div>
+
+                    <!-- Submit button -->
+                    <button type="submit" class="modal-submit-btn">✉️ Verstuur Aanvraag</button>
+
+                    <!-- Alternative contact -->
+                    <div class="modal-alternative-contact">
+                        <p>Liever direct contact?</p>
+                        <a href="mailto:info@infomaatje.com">info@infomaatje.com</a>
+                    </div>
+                </form>
+
+                <!-- Success message (hidden by default) -->
+                <div id="successMessage" class="modal-success-message">
+                    <div class="modal-success-icon">✅</div>
+                    <h3>Aanvraag Ontvangen!</h3>
+                    <p>Bedankt voor je interesse, <span class="highlight" id="confirmNaam"></span>!</p>
+                    <p>We nemen binnen <strong>24 uur</strong> contact met je op via <span class="highlight" id="confirmEmail"></span><span id="confirmTelefoonText"></span> om een geschikt moment in te plannen voor de demo.</p>
+                    <p style="font-size: 14px; color: #999; margin-top: 20px;">Je ontvangt ook een bevestigingsmail.</p>
+                    <button class="close-success-btn" onclick="closeDemoModal()">Sluiten</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="js/menu.js"></script>
+    <script src="js/demo-modal.js"></script>
 </body>
 
 </html>
