@@ -91,7 +91,7 @@ demoForm.addEventListener('submit', function(e) {
     }
 
     // Verstuur data naar backend
-    fetch('send-demo-request.php', {
+    fetch('/send-demo-request.php', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
