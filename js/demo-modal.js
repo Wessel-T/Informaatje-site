@@ -2,6 +2,9 @@
 const modalOverlay = document.getElementById('modalOverlay');
 const demoForm = document.getElementById('demoForm');
 const successMessage = document.getElementById('successMessage');
+const openDemoBtn = document.getElementById('openDemoBtn');
+const closeModalBtn = document.getElementById('closeModalBtn');
+const closeSuccessBtn = document.getElementById('closeSuccessBtn');
 
 // Open demo modal
 function openDemoModal(event) {
@@ -21,6 +24,19 @@ function closeDemoModal() {
         successMessage.classList.remove('active');
         demoForm.reset();
     }, 300);
+}
+
+// Event listeners voor buttons
+if (openDemoBtn) {
+    openDemoBtn.addEventListener('click', openDemoModal);
+}
+
+if (closeModalBtn) {
+    closeModalBtn.addEventListener('click', closeDemoModal);
+}
+
+if (closeSuccessBtn) {
+    closeSuccessBtn.addEventListener('click', closeDemoModal);
 }
 
 // Close modal when clicking on overlay (not on modal itself)

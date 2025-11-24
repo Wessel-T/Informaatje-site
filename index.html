@@ -219,7 +219,7 @@
 
                 <div class="demo-right">
                     <h4>Demo aanvraag</h4>
-                    <button onclick="openDemoModal()" class="demo-button">Plan een Demo</button>
+                    <button class="demo-button" id="openDemoBtn">Plan een Demo</button>
                 </div>
             </div>
         </section>
@@ -255,7 +255,7 @@
     <div class="modal-overlay" id="modalOverlay">
         <div class="modal">
             <!-- Close button -->
-            <button class="close-modal" onclick="closeDemoModal()">&times;</button>
+            <button class="close-modal" id="closeModalBtn">&times;</button>
 
             <!-- Modal Header -->
             <div class="modal-header">
@@ -328,7 +328,7 @@
                     <p>Bedankt voor je interesse, <span class="highlight" id="confirmNaam"></span>!</p>
                     <p>We nemen binnen <strong>24 uur</strong> contact met je op via <span class="highlight" id="confirmEmail"></span><span id="confirmTelefoonText"></span> om een geschikt moment in te plannen voor de demo.</p>
                     <p style="font-size: 14px; color: #999; margin-top: 20px;">Je ontvangt ook een bevestigingsmail.</p>
-                    <button class="close-success-btn" onclick="closeDemoModal()">Sluiten</button>
+                    <button class="close-success-btn" id="closeSuccessBtn">Sluiten</button>
                 </div>
             </div>
         </div>
