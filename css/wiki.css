@@ -509,3 +509,217 @@ body {
 .icon-button:hover {
     background: #e2e8f0;
 }
+/* ============================================
+   CONTENT ICONS - Voor gebruik in wiki content
+   ============================================ */
+
+/* Basis icon class voor inline gebruik */
+.icon {
+    font-family: "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    font-style: normal;
+    display: inline-block;
+    margin-right: 6px;
+}
+
+/* Specifieke content icons */
+.icon-werklijsten::before {
+    content: "\1F4CB";  /* 📋 Clipboard */
+}
+
+.icon-notitie::before {
+    content: "\1F4DD";  /* 📝 Note */
+}
+
+.icon-admin::before {
+    content: "\2699";   /* ⚙️ Gear */
+}
+
+.icon-uitloggen::before {
+    content: "\1F6AA";  /* 🚪 Door */
+}
+
+.icon-help::before {
+    content: "\2753";   /* ❓ Question */
+}
+
+.icon-zoeken::before {
+    content: "\1F50D";  /* 🔍 Magnifying glass */
+}
+
+.icon-verwijderen::before {
+    content: "\1F5D1";  /* 🗑️ Trash */
+}
+
+.icon-bewerken::before {
+    content: "\270F";   /* ✏️ Pencil */
+}
+
+.icon-opslaan::before {
+    content: "\1F4BE";  /* 💾 Floppy disk */
+}
+
+.icon-toevoegen::before {
+    content: "\2795";   /* ➕ Plus */
+}
+
+.icon-downloaden::before {
+    content: "\1F4E5";  /* 📥 Download */
+}
+
+.icon-uploaden::before {
+    content: "\1F4E4";  /* 📤 Upload */
+}
+
+.icon-printen::before {
+    content: "\1F5A8";  /* 🖨️ Printer */
+}
+
+.icon-email::before {
+    content: "\1F4E7";  /* 📧 Email */
+}
+
+.icon-telefoon::before {
+    content: "\1F4DE";  /* 📞 Phone */
+}
+
+.icon-locatie::before {
+    content: "\1F4CD";  /* 📍 Location pin */
+}
+
+.icon-tijd::before {
+    content: "\23F0";   /* ⏰ Clock */
+}
+
+.icon-waarschuwing::before {
+    content: "\26A0";   /* ⚠️ Warning */
+}
+
+.icon-info::before {
+    content: "\2139";   /* ℹ️ Info */
+}
+
+.icon-succes::before {
+    content: "\2705";   /* ✅ Checkmark */
+}
+
+.icon-fout::before {
+    content: "\274C";   /* ❌ X mark */
+}
+
+.icon-pijl-rechts::before {
+    content: "\2192";   /* → Right arrow */
+}
+
+.icon-pijl-links::before {
+    content: "\2190";   /* ← Left arrow */
+}
+
+.icon-pijl-omhoog::before {
+    content: "\2191";   /* ↑ Up arrow */
+}
+
+.icon-pijl-omlaag::before {
+    content: "\2193";   /* ↓ Down arrow */
+}
+
+.icon-ster::before {
+    content: "\2B50";   /* ⭐ Star */
+}
+
+.icon-vinkje::before {
+    content: "\2713";   /* ✓ Check */
+}
+
+.icon-kruisje::before {
+    content: "\2717";   /* ✗ X */
+}
+
+
+/* ============================================
+   TABLE ICONS - Voor gebruik in tabellen
+   ============================================ */
+
+/* Icon in table cells */
+.wiki-table td.icon-cell {
+    text-align: center;
+    font-size: 1.2em;
+}
+
+/* Clickable icon buttons in tables */
+.icon-button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2em;
+    padding: 4px;
+    transition: transform 0.2s ease;
+}
+
+.icon-button:hover {
+    transform: scale(1.2);
+}
+
+
+/* ============================================
+   INLINE ICON GEBRUIK (in tekst)
+   ============================================ */
+
+/* Voor inline icons in paragrafen */
+p .icon,
+li .icon,
+td .icon {
+    margin-right: 4px;
+    vertical-align: middle;
+}
+
+/* Grotere icons voor headings */
+h2 .icon,
+h3 .icon,
+h4 .icon {
+    margin-right: 8px;
+    font-size: 1.1em;
+}
+
+
+/* ============================================
+   COLORED ICONS
+   ============================================ */
+
+/* Gekleurde icon varianten */
+.icon-primary::before {
+    color: #4299e1;
+}
+
+.icon-success::before {
+    color: #48bb78;
+}
+
+.icon-warning::before {
+    color: #ed8936;
+}
+
+.icon-danger::before {
+    color: #f56565;
+}
+
+.icon-secondary::before {
+    color: #718096;
+}
+
+
+/* ============================================
+   ICON SIZES
+   ============================================ */
+
+.icon-xs {
+    font-size: 0.8em;
+}
+
+.icon-sm {
+    font-size: 0.9em;
+}
+
+/* ============================================
+   END OF STYLESHEET
+   Total icons: 16 sidebar + 30+ content icons
+   ============================================ */
