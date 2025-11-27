@@ -1,28 +1,52 @@
-
- <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-<div class="breadcrumbs">
-    <a href="#" data-page="home">Home</a> › <a href="#" data-page="dossier">Dossier</a> › Correspondentie
-</div>
-<h2>Correspondentiedossier</h2>
-<p>Op de correspondentie pagina is alle correspondentie zichtbaar die aan het dossier gekoppeld is. Dit is inclusief:</p>
-<ul>
-    <li>Notities die je via de knop bovenaan de pagina kan toevoegen</li>
-    <li>Alle inkomende mails die gekoppeld zijn aan het dossiercode</li>
-    <li>De mails die verstuurd zijn</li>
-    <li>Alle documenten die via een taak geopend zijn</li>
-</ul>
 
-<p>Zo is in 1 lijst zichtbaar welk soort contact er geweest is met een persoon.</p>
+<!-- CORRESPONDENTIE.HTML -->
+<nav class="breadcrumbs">
+    <a href="#" data-page="home">Home</a> / Dossiers / Correspondentie
+</nav>
 
-<h3>Correspondentie Overzicht</h3>
-<p>Op de pagina Correspondentie (via het menu) is alle correspondentie te zien van <strong>alle dossiers</strong> én ook die niet gekoppeld zijn aan een dossier.</p>
-<p>Een duidelijke lijst met de gegevens van wie het komt en waar het naartoe gaat. Ook is er de mogelijkheid om iets te kunnen verwijderen mocht het er dubbel in staan of hoort het hier niet thuis.</p>
+<h2><span class="icon icon-correspondentie icon-primary"></span> Correspondentie</h2>
 
-<div class="info-box">
-    <h4>🔍 Zoekfunctie</h4>
-    <p>Links boven de lijst is een zoekveld zichtbaar waarmee je kan zoeken in de correspondentie. Tijdens het typen wordt dit automatisch bijgewerkt op de pagina.</p>
+<p>Beheer alle e-mails en brieven gerelateerd aan een dossier.</p>
+
+<h3><span class="icon icon-email"></span> E-mail versturen</h3>
+
+<ol>
+    <li><span class="icon icon-dossier"></span> Open het dossier</li>
+    <li><span class="icon icon-email"></span> Klik op "E-mail versturen"</li>
+    <li><span class="icon icon-bewerken"></span> Schrijf je bericht</li>
+    <li><span class="icon icon-uploaden"></span> Voeg bijlagen toe (optioneel)</li>
+    <li><span class="icon icon-opslaan"></span> Verstuur en archiveer</li>
+</ol>
+
+<table class="wiki-table">
+    <thead>
+        <tr>
+            <th>Type</th>
+            <th>Gebruik</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><span class="icon icon-email"></span> E-mail</td>
+            <td>Digitale communicatie</td>
+        </tr>
+        <tr>
+            <td><span class="icon icon-printen"></span> Brief</td>
+            <td>Fysieke correspondentie</td>
+        </tr>
+        <tr>
+            <td><span class="icon icon-telefoon"></span> Telefoon</td>
+            <td>Notitie van telefoongesprek</td>
+        </tr>
+    </tbody>
+</table>
+
+<div class="wiki-page-nav">
+    <a href="#" data-page="koppels" class="btn-prev"><span class="icon icon-pijl-links"></span> Vorige</a>
+    <a href="#" data-page="admin-vragenlijsten" class="btn-next">Volgende <span class="icon icon-pijl-rechts"></span></a>
 </div>

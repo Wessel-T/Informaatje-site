@@ -1,13 +1,18 @@
-
- <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-<div class="breadcrumbs">
-    <a href="#" data-page="home">Home</a> › Knoppen
-</div>
+
+<!-- VOORBEELD: Knoppen pagina content -->
+<!-- Dit is de content die dynamisch geladen wordt in #content-area -->
+
+<nav class="breadcrumbs">
+    <a href="#" data-page="home">Home</a> / Knoppen
+</nav>
+
 <h2>Knoppen</h2>
+
 <p>De onderstaande knoppen zijn op alle pagina's zichtbaar en dienen voor de volgende functies:</p>
 
 <table class="wiki-table">
@@ -48,9 +53,11 @@
 </table>
 
 <h3>Zoekfunctie</h3>
-<p>Onder de rij met menuknoppen is een <strong>zoekveld</strong> zichtbaar. Deze wordt gebruikt om te zoeken naar alle dossiers, zowel die van kinderen/vrijwilligers én koppels.</p>
 
-<p>Je kan zoeken op:</p>
+<p>Onder de rij met menuknoppen is een <span class="icon icon-zoeken"></span> <strong>zoekveld</strong> zichtbaar. Deze wordt gebruikt om te zoeken naar alle dossiers, zowel die van kinderen/vrijwilligers én koppels.</p>
+
+<p>Je kunt zoeken op:</p>
+
 <ul>
     <li>Naam van het kind</li>
     <li>Naam van de vrijwilliger</li>
@@ -58,3 +65,19 @@
     <li>Aanmaakdatum</li>
     <li>Dossiercode (direct zoeken)</li>
 </ul>
+
+<div class="info-box">
+    <h4><span class="icon icon-info"></span> Tip</h4>
+    <p>Gebruik de zoekfunctie om snel een specifiek dossier te vinden zonder door alle lijsten te bladeren.</p>
+</div>
+
+<div class="warning-box">
+    <h4><span class="icon icon-waarschuwing"></span> Let op</h4>
+    <p>Sommige functies zijn alleen beschikbaar voor gebruikers met admin rechten.</p>
+</div>
+
+<!-- Navigatie knoppen -->
+<div class="wiki-page-nav">
+    <a href="#" data-page="inleiding" class="btn-prev"><span class="icon icon-pijl-links"></span> Vorige: Inleiding</a>
+    <a href="#" data-page="parkeerplaatsen" class="btn-next">Volgende: Parkeerplaatsen <span class="icon icon-pijl-rechts"></span></a>
+</div>

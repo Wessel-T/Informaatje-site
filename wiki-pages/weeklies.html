@@ -1,48 +1,35 @@
-
- <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-<div class="breadcrumbs">
-    <a href="#" data-page="home">Home</a> › Weeklies
+
+<!-- WEEKLIES.HTML -->
+<nav class="breadcrumbs">
+    <a href="#" data-page="home">Home</a> / Overig / Weeklies
+</nav>
+
+<h2><span class="icon icon-weeklies icon-primary"></span> Weeklies</h2>
+
+<p>Wekelijkse rapportages en overzichten van je werkzaamheden.</p>
+
+<h3><span class="icon icon-zoeken"></span> Weekly bekijken</h3>
+
+<p>Weeklies geven inzicht in:</p>
+
+<ul>
+    <li><span class="icon icon-dossier"></span> Aantal behandelde dossiers</li>
+    <li><span class="icon icon-tijd"></span> Geplande en uitgevoerde afspraken</li>
+    <li><span class="icon icon-taken"></span> Voltooide taken en checklijsten</li>
+    <li><span class="icon icon-notitie"></span> Toegevoegde notities</li>
+</ul>
+
+<div class="info-box">
+    <h4><span class="icon icon-info"></span> Rapportages</h4>
+    <p>Weeklies kunnen worden geëxporteerd naar PDF of Excel voor externe rapportage.</p>
 </div>
-<h2>Weeklies</h2>
 
-<h3>Inleiding</h3>
-<p>Voor het invullen van de Weeklies (en andere vragenlijsten) is een webapp ontwikkeld. Met deze APP kan de Big alle binnen Infomaatje voor hem/haar aangemaakte vragenlijsten beantwoorden.</p>
-
-<p>Hiervoor zijn één vragenlijst en twee taken aangemaakt:</p>
-<ol>
-    <li><strong>Vragenlijst</strong>: Weekly|Week @weeknummer@: van @week_start@ t/m @week_eind@</li>
-    <li><strong>Taak</strong>: Big: Mail voor het installeren van de Weekly App</li>
-    <li><strong>Taak</strong>: Weekly versturen</li>
-</ol>
-
-<h3>Vragenlijst variabelen</h3>
-<p>Om vragenlijsten onderling te onderscheiden zijn er variabelen opgenomen in de omschrijving:</p>
-<ul>
-    <li><span class="inline-code">@weeknummer@</span> - Jaar en weeknummer (bij aanmaak)</li>
-    <li><span class="inline-code">@week_start@</span> - Startdatum van de betreffende week</li>
-    <li><span class="inline-code">@week_eind@</span> - Einddatum van de betreffende week</li>
-</ul>
-
-<h3>Big: Mail voor het installeren van de Weekly App</h3>
-<p>Dit is een gewone mail taak met een link waarmee de Big de APP kan installeren. De link wordt gezet met de variabele <span class="inline-code">@vw_app@</span>.</p>
-<p>Deze link is gepersonaliseerd en bevat een token welke de Big toegang verleent tot zijn of haar vragenlijsten. Iedere Big krijgt zijn eigen mail.</p>
-
-<h3>Weekly versturen</h3>
-<p>Voor het versturen of klaarzetten van de Weeklies voor de Big is een aparte taak aangemaakt. De belangrijke instellingen:</p>
-<ul>
-    <li><strong>Actie</strong>: AppVragenlijst (bij verwerking wordt vragenlijst aangemaakt)</li>
-    <li><strong>Vragenlijst</strong>: Geeft aan welke vragenlijst wordt aangemaakt</li>
-    <li><strong>Herhaal taak iedere</strong>: Welke dag van de week/maand de vragenlijst klaar staat</li>
-</ul>
-
-<h3>Weekly activeren voor Big</h3>
-<p>Beide taken zijn toegevoegd aan de checklijst 'SBM: APP en vragenlijst voor weekly'. Het idee is dat je de checklijst toevoegt aan een koppel dossier.</p>
-
-<div class="warning-box">
-    <h4>⚠️ Belangrijk</h4>
-    <p>De Weeklies worden pas klaar gezet bij de Big zodra je de taak 'Weekly versturen' activeert, dat wil zeggen VT aanvinkt. Wil je de taak eerder of tijdelijk stopzetten, vink dan NVT aan.</p>
+<div class="wiki-page-nav">
+    <a href="#" data-page="agenda" class="btn-prev"><span class="icon icon-pijl-links"></span> Vorige</a>
+    <a href="#" data-page="autorisatie" class="btn-next">Volgende <span class="icon icon-pijl-rechts"></span></a>
 </div>

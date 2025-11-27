@@ -1,65 +1,51 @@
-
- <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-<div class="breadcrumbs">
-    <a href="#" data-page="home">Home</a> › <a href="#" data-page="dossier">Dossier</a> › Checklijsten
-</div>
-<h2>Checklijsten</h2>
-<p>Deze module toont de checklijsten welke voor het dossier zijn aangemaakt. Een lijst met titels van checklijsten geeft toegang tot de taken gekoppeld aan de lijst.</p>
 
-<h3>Taken afvinken</h3>
-<p>Deze taken kan je aanvinken met:</p>
-<ul>
-    <li><strong>NVT</strong> (Niet van toepassing)</li>
-    <li><strong>VT</strong> (Van toepassing)</li>
-</ul>
+<!-- CHECKLIJSTEN.HTML -->
+<nav class="breadcrumbs">
+    <a href="#" data-page="home">Home</a> / Dossiers / Checklijsten
+</nav>
 
-<p>Bij elke taak is ook zichtbaar:</p>
-<ul>
-    <li>Wie er iets mee gedaan heeft</li>
-    <li>Wanneer iemand er iets mee gedaan heeft</li>
-</ul>
+<h2><span class="icon icon-checklijsten icon-primary"></span> Checklijsten</h2>
 
-<div class="warning-box">
-    <h4>⚠️ Belangrijk</h4>
-    <p>Zolang 1 van deze taken nog niet is aangevinkt blijft deze zichtbaar in een <a href="#" class="wiki-link" data-page="parkeerplaatsen">parkeerplaats</a>.</p>
-</div>
+<p>Checklijsten helpen bij het structureren van werkprocessen en zorgen voor consistentie.</p>
 
-<h3>Parkeerplaats toewijzing</h3>
-<p>Aangezien er meerdere parkeerplaatsen zijn is het mogelijk dat de checklijst zichtbaar wordt in een andere parkeerplaats nadat een bepaalde taak voltooid is.</p>
-<p><strong>Voorbeeld:</strong> Stel dat de eerst volgende taak die op de lijst staat "Verstuur brief" is, kan deze zichtbaar worden in een parkeerplaats genaamd "Brieven". Deze mogelijkheid is er om het zo overzichtelijk mogelijk te houden.</p>
+<h3><span class="icon icon-vinkje"></span> Checklist gebruiken</h3>
 
-<h3>Checklijst toevoegen</h3>
-<p>Een checklijst toevoegen aan een dossier gaat op precies dezelfde manier als hoe een <a href="#" class="wiki-link" data-page="vragenlijsten">vragenlijst</a> toegevoegd wordt.</p>
-
-<h3>Taak uitvoeren</h3>
-<p>Het is mogelijk dat er aan een taak een actie gekoppeld is. Dan is aan het einde van de regel een icoontje zichtbaar dat aanduidt wat voor taak het betreft:</p>
-<ul>
-    <li><strong>📄 Print-actie</strong>: Opent de tekstverwerker (bijv. Word)</li>
-    <li><strong>📧 E-mailactie</strong>: Opent de mailclient (bijv. GMail)</li>
-</ul>
-
-<div class="info-box">
-    <h4>🔐 Autorisatie vereist</h4>
-    <p>Heb je GMail dan dien je Infomaatje eerst te <a href="#" class="wiki-link" data-page="autorisatie">autoriseren</a> voor het gebruik van GMail.</p>
-</div>
-
-<h3>Het aanvullen van dossiers</h3>
-<p>Het verzoek tot het aanvullen van een dossier geschiedt via het versturen van een e-mail aan de vrijwilliger dan wel de aanmelder van een kind. Hiervoor zijn speciale taken aangemaakt:</p>
-<ul>
-    <li>Mail: Aanvullen dossier kind</li>
-    <li>Mail: Aanvullen dossier vrijwilliger</li>
-</ul>
-
-<p><strong>Procedure:</strong></p>
 <ol>
-    <li>Autoriseer Infomaatje voor toegang tot je GMail account</li>
-    <li>Zet de status van het kind/vrijwilliger dossier op "aanvullen"</li>
-    <li>Voeg de desbetreffende checklijst toe</li>
-    <li>Voer de taak 'Mail: Aanvullen ..' uit door op het e-mail icoon te klikken</li>
-    <li>Het e-mail concept wordt aangemaakt en GMail wordt geopend</li>
-    <li>Verstuur de e-mail</li>
+    <li><span class="icon icon-dossier"></span> Open het dossier</li>
+    <li><span class="icon icon-checklijsten"></span> Selecteer de juiste checklist</li>
+    <li><span class="icon icon-vinkje"></span> Vink items af naarmate ze voltooid zijn</li>
+    <li><span class="icon icon-opslaan"></span> Bewaar de voortgang</li>
 </ol>
+
+<table class="wiki-table">
+    <thead>
+        <tr>
+            <th>Status</th>
+            <th>Betekenis</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><span class="status-nieuw">Nieuw</span></td>
+            <td>Checklist nog niet gestart</td>
+        </tr>
+        <tr>
+            <td><span class="status-pending">In behandeling</span></td>
+            <td>Bezig met invullen</td>
+        </tr>
+        <tr>
+            <td><span class="status-actief">Compleet</span></td>
+            <td>Alle items afgevinkt</td>
+        </tr>
+    </tbody>
+</table>
+
+<div class="wiki-page-nav">
+    <a href="#" data-page="vragenlijsten" class="btn-prev"><span class="icon icon-pijl-links"></span> Vorige</a>
+    <a href="#" data-page="koppels" class="btn-next">Volgende <span class="icon icon-pijl-rechts"></span></a>
+</div>

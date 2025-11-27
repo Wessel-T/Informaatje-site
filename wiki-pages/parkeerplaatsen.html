@@ -1,36 +1,102 @@
- 
- <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-<div class="breadcrumbs">
-    <a href="#" data-page="home">Home</a> › Parkeerplaatsen
-</div>
-<h2>Parkeerplaatsen</h2>
-<p>De eerste pagina die je ziet na het inloggen in het Infomaatje Systeem is de pagina <strong>Parkeerplaatsen</strong>. Op deze pagina is een overzicht te zien van:</p>
+
+<!-- PARKEERPLAATSEN.HTML - Parkeerplaatsen Content -->
+
+<nav class="breadcrumbs">
+    <a href="#" data-page="home">Home</a> / Parkeerplaatsen
+</nav>
+
+<h2><span class="icon icon-parkeren icon-primary"></span> Parkeerplaatsen</h2>
+
+<p>Parkeerplaatsen zijn dossiers die tijdelijk "geparkeerd" worden omdat er nog niet alle benodigde informatie beschikbaar is of omdat het dossier nog niet actief behandeld kan worden.</p>
+
+<h3><span class="icon icon-help"></span> Wat is een parkeerplaats?</h3>
+
+<p>Een parkeerplaats is een tijdelijke opslaglocatie voor dossiers die:</p>
+
 <ul>
-    <li>Inkomende mails die niet automatisch bij een dossier geplaatst zijn</li>
-    <li>De zogenaamde "Parkeerplaatsen" met openstaande taken</li>
+    <li><span class="icon icon-tijd"></span> Wachten op aanvullende informatie</li>
+    <li><span class="icon icon-tijd"></span> Nog niet geactiveerd kunnen worden</li>
+    <li><span class="icon icon-tijd"></span> Tijdelijk on-hold zijn gezet</li>
+    <li><span class="icon icon-tijd"></span> In afwachting zijn van een beslissing</li>
 </ul>
 
-<p>Zoals eerder genoemd wanneer een <a href="#" class="wiki-link" data-page="checklijsten">checklijst</a> een taak heeft die nog niet behandeld is wordt deze checklijst zichtbaar in 1 van de parkeerplaatsen. Dit laat zien dat er dus nog een actie ondernomen moet worden.</p>
-
 <div class="info-box">
-    <h4>💡 Filteren op casemanager</h4>
-    <p>Als casemanager kan je alle openstaande taken in de lijst zien, maar door 1 druk op de knop "Alle" kan je alleen de openstaande taken laten zien die gekoppeld zijn aan dossiers die bij jou horen.</p>
+    <h4><span class="icon icon-info"></span> Wanneer gebruik je een parkeerplaats?</h4>
+    <p>Gebruik een parkeerplaats wanneer een dossier niet direct behandeld kan worden, maar je het wel wilt bewaren in het systeem voor toekomstig gebruik.</p>
 </div>
 
-<p>Wanneer je klikt op 1 van de openstaande taken kom je automatisch terecht in het dossier waar het bij hoort.</p>
+<h3><span class="icon icon-toevoegen"></span> Dossier naar parkeerplaats verplaatsen</h3>
 
-<h3>Inkomende mail</h3>
-<p>Aan de linkerkant zie je de Inkomende mail staan. Infomaatje heeft een eigen email adres. Door naar dit email adres te mailen komt de mail in dit vak terecht, <strong>tenzij</strong> wanneer je in het onderwerp van de mail een Dossiercode zet met een # ervoor op deze manier: <span class="inline-code">#VW015017</span>. Dan wordt de mail automatisch in het goede dossier verwerkt.</p>
+<p>Volg deze stappen om een dossier naar een parkeerplaats te verplaatsen:</p>
 
-<p>Als hier wel een mail in staat kan je er 3 dingen mee doen:</p>
 <ol>
-    <li><strong>Handmatig koppelen</strong> aan een dossier (folder icoon)</li>
-    <li><strong>Verwijderen</strong> uit het systeem (prullenbak icoon)</li>
-    <li><strong>De mail openen</strong> (klik op onderwerp)</li>
+    <li><span class="icon icon-zoeken"></span> Open het betreffende dossier</li>
+    <li><span class="icon icon-admin"></span> Klik op de parkeerplaats knop in de menubalk</li>
+    <li><span class="icon icon-notitie"></span> Voeg een reden toe waarom het dossier geparkeerd wordt</li>
+    <li><span class="icon icon-opslaan"></span> Bevestig de actie</li>
 </ol>
 
-<p>Wanneer je op het onderwerp van de mail drukt wordt deze automatisch geopend in Outlook.</p>
+<h3><span class="icon icon-zoeken"></span> Geparkeerde dossiers terugvinden</h3>
+
+<p>Je kunt geparkeerde dossiers op verschillende manieren terugvinden:</p>
+
+<table class="wiki-table">
+    <thead>
+        <tr>
+            <th>Methode</th>
+            <th>Beschrijving</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><span class="icon icon-zoeken"></span> Zoekfunctie</td>
+            <td>Gebruik de zoekbalk met filter "Parkeerplaats"</td>
+        </tr>
+        <tr>
+            <td><span class="icon icon-werklijsten"></span> Werklijsten</td>
+            <td>Bekijk de werklijst "Geparkeerde dossiers"</td>
+        </tr>
+        <tr>
+            <td><span class="icon icon-admin"></span> Admin paneel</td>
+            <td>Overzicht van alle parkeerplaatsen (admin only)</td>
+        </tr>
+    </tbody>
+</table>
+
+<h3><span class="icon icon-bewerken"></span> Dossier uit parkeerplaats halen</h3>
+
+<p>Wanneer je klaar bent om een dossier weer actief te maken:</p>
+
+<ol>
+    <li><span class="icon icon-zoeken"></span> Zoek het geparkeerde dossier</li>
+    <li><span class="icon icon-bewerken"></span> Open het dossier</li>
+    <li><span class="icon icon-toevoegen"></span> Klik op "Activeren"</li>
+    <li><span class="icon icon-notitie"></span> Voeg eventueel een notitie toe</li>
+    <li><span class="icon icon-opslaan"></span> Sla de wijzigingen op</li>
+</ol>
+
+<div class="warning-box">
+    <h4><span class="icon icon-waarschuwing"></span> Let op</h4>
+    <p>Geparkeerde dossiers worden niet automatisch verwijderd. Controleer regelmatig of dossiers nog steeds geparkeerd moeten blijven of geactiveerd kunnen worden.</p>
+</div>
+
+<h3><span class="icon icon-admin"></span> Beheer (Administrators)</h3>
+
+<p>Als administrator heb je extra mogelijkheden:</p>
+
+<ul>
+    <li><span class="icon icon-zoeken"></span> Overzicht van alle parkeerplaatsen</li>
+    <li><span class="icon icon-tijd"></span> Inzicht in hoe lang dossiers geparkeerd staan</li>
+    <li><span class="icon icon-notities"></span> Herinneringen instellen voor geparkeerde dossiers</li>
+    <li><span class="icon icon-verwijderen"></span> Opschonen van oude parkeerplaatsen</li>
+</ul>
+
+<div class="wiki-page-nav">
+    <a href="#" data-page="knoppen" class="btn-prev"><span class="icon icon-pijl-links"></span> Vorige: Knoppen</a>
+    <a href="#" data-page="dossier" class="btn-next">Volgende: Dossiers <span class="icon icon-pijl-rechts"></span></a>
+</div>

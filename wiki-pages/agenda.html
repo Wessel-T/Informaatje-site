@@ -1,47 +1,52 @@
-
- <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 
-<div class="breadcrumbs">
-    <a href="#" data-page="home">Home</a> › <a href="#" data-page="dossier">Dossier</a> › Agenda
-</div>
-<h2>Agenda Taak</h2>
-<p>Met behulp van de agenda taak kunnen afspraken vastgelegd worden in Outlook vanuit Infomaatje. We kunnen ook bestaande afspraken in Outlook koppelen met Infomaatje.</p>
+<!-- AGENDA.HTML -->
+<nav class="breadcrumbs">
+    <a href="#" data-page="home">Home</a> / Overig / Agenda
+</nav>
 
-<div class="warning-box">
-    <h4>⚠️ Vereisten</h4>
-    <p>Voordat we hier mee aan de slag kunnen gaan moeten we wel ingelogd zijn bij Outlook en, eenmaal aangekomen bij een checklijst, de Outlook agenda kiezen waarin we de afspraken willen opslaan.</p>
-</div>
+<h2><span class="icon icon-agenda icon-primary"></span> Agenda</h2>
 
-<h3>Agenda kiezen</h3>
-<p>Eenmaal ingelogd in Outlook dan kun je bij de checklijst module van het dossier jouw afspraken agenda kiezen:</p>
+<p>Plan en beheer afspraken gekoppeld aan dossiers.</p>
+
+<h3><span class="icon icon-toevoegen"></span> Afspraak maken</h3>
+
 <ol>
-    <li>Klik op de knop [Kies uw afspraken agenda]</li>
-    <li>Heb je maar één agenda, dan wordt deze ingesteld</li>
-    <li>Heb je meerdere agenda's, dan kun je een keuze maken</li>
-</ol>
-<p>De keuze die je maakt wordt opgeslagen. Je kunt deze later altijd aanpassen door op de knop [Agenda] te klikken.</p>
-
-<h3>Het vastleggen van een afspraak</h3>
-<p>Het vastleggen van een afspraak doe je door in een agenda-veld de datum en tijd van je afspraak in te voeren.</p>
-<p>Terwijl je deze datum invoert toont Infomaatje eventuele afspraken die na dat tijdstip zijn vastgelegd in Outlook. Dit maakt het mogelijk een bestaande afspraak te koppelen door op de titel van de afspraak te klikken.</p>
-
-<h4>Nieuwe afspraak</h4>
-<p>Wil je een nieuwe afspraak vastleggen:</p>
-<ol>
-    <li>Klik op het Outlook icoontje</li>
-    <li>Het afspraak-dialoogvenster van Outlook opent</li>
-    <li>Plan en leg de afspraak vast</li>
-    <li>Eventuele aanpassingen zullen door Infomaatje worden opgepakt</li>
+    <li><span class="icon icon-agenda"></span> Open de agenda</li>
+    <li><span class="icon icon-toevoegen"></span> Klik op "Nieuwe afspraak"</li>
+    <li><span class="icon icon-tijd"></span> Stel datum en tijd in</li>
+    <li><span class="icon icon-dossier"></span> Koppel aan dossier</li>
+    <li><span class="icon icon-opslaan"></span> Bewaar afspraak</li>
 </ol>
 
-<div class="info-box">
-    <h4>💡 Automatisch ingevuld</h4>
-    <p>Bij het aanmaken van een afspraak geeft Infomaatje de titel van de afspraak mee aangevuld met het dossier. Ook geeft Infomaatje het adres mee van de betrokken persoon. (In geval van het koppeldossier is dat het adres van de mentee)</p>
-</div>
+<table class="wiki-table">
+    <thead>
+        <tr>
+            <th>Type</th>
+            <th>Beschrijving</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><span class="icon icon-tijd"></span> Intake</td>
+            <td>Eerste kennismakingsgesprek</td>
+        </tr>
+        <tr>
+            <td><span class="icon icon-tijd"></span> Evaluatie</td>
+            <td>Voortgangsgesprek</td>
+        </tr>
+        <tr>
+            <td><span class="icon icon-tijd"></span> Afronding</td>
+            <td>Afsluiting traject</td>
+        </tr>
+    </tbody>
+</table>
 
-<h4>Afspraak loskoppelen</h4>
-<p>Wil je een afspraak loskoppelen van het dossier? Klik dan op het rode <strong>X</strong> wat verschijnt zodra je met de cursor over het datumveld beweegt. Ook hiervoor geldt dat het wel een afspraak betreft welke jij hebt vastgelegd.</p>
+<div class="wiki-page-nav">
+    <a href="#" data-page="notities" class="btn-prev"><span class="icon icon-pijl-links"></span> Vorige</a>
+    <a href="#" data-page="weeklies" class="btn-next">Volgende <span class="icon icon-pijl-rechts"></span></a>
+</div>
