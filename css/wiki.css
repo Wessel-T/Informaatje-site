@@ -282,6 +282,12 @@ body {
     font-family: "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
+.nav-icon-woordenlijst::before {
+    content: "\1F4D6";  /* 📖 Book/Dictionary */
+    margin-right: 8px;
+    font-family: "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+
 
 /* Content Area */
 .wiki-content {

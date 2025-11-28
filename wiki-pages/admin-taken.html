@@ -1,1 +1,601 @@
-[CONTENT TOO LARGE - Using bash to copy]
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<!-- ADMIN-TAKEN.HTML - Versie 2.1 - Opgeschoonde versie -->
+
+<nav class="breadcrumbs">
+    <a href="#" data-page="home">Home</a> / Administratie / Taken Beheer
+</nav>
+
+<h2><span class="icon icon-taken icon-primary"></span> Taken Beheer</h2>
+
+<p>Beheer taken en taak templates voor je organisatie. Taken helpen je om belangrijke stappen in je werkprocessen bij te houden en automatisch documenten of emails te genereren.</p>
+
+<div class="warning-box">
+    <h4><span class="icon icon-waarschuwing"></span> Administrator functie</h4>
+    <p>Deze functies zijn alleen beschikbaar voor gebruikers met administrator rechten. Normale medewerkers kunnen alleen taken uitvoeren, niet beheren.</p>
+</div>
+
+<h3><span class="icon icon-help"></span> Wat zijn taken?</h3>
+
+<p>Taken zijn acties die uitgevoerd moeten worden in het kader van je hulpverleningsproces. Denk aan intake gesprekken, VOG aanvragen, contracten opstellen, evaluaties, etc. Elke taak kan gekoppeld worden aan:</p>
+
+<ul>
+    <li><strong>Templates</strong> - Automatisch documenten of emails genereren</li>
+    <li><strong>Dossiers</strong> - Koppel taken aan specifieke personen</li>
+    <li><strong>Workflows</strong> - Automatisch taken aanmaken bij statuswijzigingen</li>
+    <li><strong>Deadlines</strong> - Stel herinneringen in voor medewerkers</li>
+</ul>
+
+<h3><span class="icon icon-toevoegen"></span> Nieuwe taak aanmaken</h3>
+
+<p>Volg deze stappen om een nieuwe taak type aan te maken:</p>
+
+<ol>
+    <li><span class="icon icon-admin"></span> <strong>Ga naar Admin paneel</strong> → Taken</li>
+    <li><span class="icon icon-toevoegen"></span> <strong>Klik op "Nieuw taak"</strong> (rode knop rechtsboven)</li>
+    <li><span class="icon icon-bewerken"></span> <strong>Vul het taak formulier in</strong> (zie hieronder voor gedetailleerde uitleg)</li>
+    <li><span class="icon icon-opslaan"></span> <strong>Sla de taak op</strong></li>
+</ol>
+
+<h4>Taak formulier velden - Overzicht</h4>
+
+<p>Wanneer je een nieuwe taak aanmaakt, zie je een uitgebreid formulier met de volgende velden:</p>
+
+<table class="wiki-table">
+    <thead>
+        <tr>
+            <th style="width: 25%;">Veld</th>
+            <th style="width: 50%;">Beschrijving</th>
+            <th style="width: 25%;">Details</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>1. Omschrijving</strong></td>
+            <td>Korte, duidelijke naam voor de taak die medewerkers zien</td>
+            <td>✓ Verplicht<br>Vrij tekstveld</td>
+        </tr>
+        <tr>
+            <td><strong>2. Actie</strong></td>
+            <td>Bepaalt wat er gebeurt bij uitvoeren van de taak</td>
+            <td>✓ Verplicht<br>10 types (zie tabel hieronder)</td>
+        </tr>
+        <tr>
+            <td><strong>3. Handtekening (PDF)</strong></td>
+            <td>Upload PDF template en markeer waar handtekening moet komen</td>
+            <td>Optioneel<br>Alleen bij actie "Print"</td>
+        </tr>
+        <tr>
+            <td><strong>4. Parkeerplaats</strong></td>
+            <td>Bij welke werklijst hoort deze taak? Automatisch aanmaken voor dossiers in deze lijst</td>
+            <td>Optioneel<br>Kies uit 9 parkeerplaatsen</td>
+        </tr>
+        <tr>
+            <td><strong>5. Status na verwerking</strong></td>
+            <td>Dossier status wijzigt automatisch na voltooien taak</td>
+            <td>Optioneel<br>13 statussen beschikbaar</td>
+        </tr>
+        <tr>
+            <td><strong>6. Vervalt na</strong></td>
+            <td>Deadline: na hoeveel tijd moet taak voltooid zijn?</td>
+            <td>Optioneel<br>Aantal + eenheid (dag/week/maand/jaar)</td>
+        </tr>
+        <tr>
+            <td><strong>7. Herhaal taak iedere</strong></td>
+            <td>Voor terugkerende taken (evaluaties, check-ins)</td>
+            <td>Optioneel<br>Week/Maand + specifieke dag</td>
+        </tr>
+    </tbody>
+</table>
+
+<h4>Actie types - Wat kan een taak doen?</h4>
+
+<p>Het belangrijkste veld is "Actie". Dit bepaalt wat er gebeurt wanneer een medewerker de taak uitvoert:</p>
+
+<table class="wiki-table">
+    <thead>
+        <tr>
+            <th style="width: 20%;">Actie Type</th>
+            <th style="width: 40%;">Wat gebeurt er?</th>
+            <th style="width: 40%;">Gebruik voor</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><span class="icon icon-vinkje"></span> <strong>Check</strong></td>
+            <td>Simpele checklist - medewerker vinkt aan dat taak is gedaan</td>
+            <td>• Training gevolgd<br>• VOG ontvangen<br>• Intervisie bijgewoond</td>
+        </tr>
+        <tr>
+            <td><span class="icon icon-envelope-o"></span> <strong>Mail</strong></td>
+            <td>Email template wordt geopend, variabelen worden ingevuld, medewerker kan email verzenden</td>
+            <td>• Welkomstmail vrijwilliger<br>• Email naar referenten<br>• Uitnodiging gesprek</td>
+        </tr>
+        <tr>
+            <td><span class="icon icon-file-word-o"></span> <strong>Print</strong></td>
+            <td>Word of PDF document wordt gegenereerd met dossiergegevens</td>
+            <td>• Contract genereren<br>• Intakeformulier<br>• Evaluatie rapport</td>
+        </tr>
+        <tr>
+            <td><span class="icon icon-bewerken"></span> <strong>Veld</strong></td>
+            <td>Extra invoerveld wordt toegevoegd aan het dossier</td>
+            <td>• VOG nummer vastleggen<br>• Startdatum invullen<br>• Extra notitie toevoegen</td>
+        </tr>
+        <tr>
+            <td><span class="icon icon-tijd"></span> <strong>Agenda</strong></td>
+            <td>Afspraak wordt gepland in de Infomaatje kalender</td>
+            <td>• Intake gesprek plannen<br>• Evaluatie inplannen<br>• Follow-up afspraak</td>
+        </tr>
+        <tr>
+            <td><span class="icon icon-share"></span> <strong>Module</strong></td>
+            <td>Andere module in Infomaatje wordt geopend</td>
+            <td>• Open specifieke vragenlijst<br>• Ga naar checklijst<br>• Link naar parkeerplaats</td>
+        </tr>
+        <tr>
+            <td><span class="icon icon-envelope-o"></span> <strong>MailVragenlijst</strong></td>
+            <td>Email met link naar online vragenlijst wordt verstuurd</td>
+            <td>• Evaluatie vragenlijst<br>• Intake formulier online<br>• Feedback vragenlijst</td>
+        </tr>
+        <tr>
+            <td><span class="icon icon-share"></span> <strong>AppVragenlijst</strong></td>
+            <td>Push notificatie met link naar vragenlijst (voor app gebruikers)</td>
+            <td>• Snelle evaluatie via app<br>• Mobiele vragenlijst<br>• App feedback</td>
+        </tr>
+        <tr>
+            <td><span class="icon icon-checklijsten"></span> <strong>Checklijst</strong></td>
+            <td>Checklijst wordt gekoppeld aan het dossier</td>
+            <td>• Onboarding stappen<br>• Screening checklist<br>• Afrond procedure</td>
+        </tr>
+    </tbody>
+</table>
+
+<div class="info-box">
+    <h4><span class="icon icon-help"></span> Welke actie type kiezen?</h4>
+    <p><strong>Simpele taak?</strong> → Gebruik "Check"<br>
+    <strong>Document nodig?</strong> → Gebruik "Print" (Word/PDF)<br>
+    <strong>Email versturen?</strong> → Gebruik "Mail"<br>
+    <strong>Extra info vastleggen?</strong> → Gebruik "Veld"<br>
+    <strong>Online vragenlijst?</strong> → Gebruik "MailVragenlijst"</p>
+</div>
+
+<h4>Parkeerplaats koppeling - Automatische taken</h4>
+
+<p>Een krachtige functie is om taken automatisch te laten aanmaken voor dossiers in een specifieke parkeerplaats:</p>
+
+<table class="wiki-table">
+    <thead>
+        <tr>
+            <th>Parkeerplaats</th>
+            <th>Voorbeeld automatische taak</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Nieuwe aanmelding vrijwilligers</td>
+            <td>→ Automatisch taak "Intake gesprek" aanmaken</td>
+        </tr>
+        <tr>
+            <td>Kandidaat vrijwilligers</td>
+            <td>→ Automatisch taak "VOG aanvragen" aanmaken</td>
+        </tr>
+        <tr>
+            <td>Lopende koppels</td>
+            <td>→ Automatisch taak "Evaluatie 3 maanden" aanmaken</td>
+        </tr>
+        <tr>
+            <td>Slapende vrijwilligers</td>
+            <td>→ Automatisch taak "Check-in gesprek" aanmaken</td>
+        </tr>
+        <tr>
+            <td>Gestopte koppels</td>
+            <td>→ Automatisch taak "Exit evaluatie" aanmaken</td>
+        </tr>
+    </tbody>
+</table>
+
+<div class="info-box">
+    <h4><span class="icon icon-info"></span> Voorbeeld workflow</h4>
+    <p>Je maakt een taak "Intake gesprek" met:</p>
+    <ul>
+        <li><strong>Actie:</strong> Agenda (plan afspraak)</li>
+        <li><strong>Parkeerplaats:</strong> Nieuwe aanmelding vrijwilligers</li>
+        <li><strong>Status na verwerking:</strong> Kandidaat vrijwilligers</li>
+        <li><strong>Vervalt na:</strong> 14 dagen</li>
+    </ul>
+    <p><strong>Resultaat:</strong> Zodra een vrijwilliger aanmeldt, wordt automatisch een intake taak aangemaakt. Na uitvoeren gaat het dossier naar "Kandidaat". Als niet binnen 14 dagen gedaan, krijgt de coördinator een herinnering.</p>
+</div>
+
+<h4>Status wijziging na verwerking</h4>
+
+<p>Je kunt een taak zo instellen dat het dossier automatisch naar een andere status gaat na voltooien:</p>
+
+<table class="wiki-table">
+    <thead>
+        <tr>
+            <th>Taak</th>
+            <th>Status na verwerking</th>
+            <th>Effect</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Intake gesprek</td>
+            <td>→ Kandidaat vrijwilligers</td>
+            <td>Dossier verhuist naar kandidaten parkeerplaats</td>
+        </tr>
+        <tr>
+            <td>Match gemaakt</td>
+            <td>→ Gematcht</td>
+            <td>Dossier krijgt status "gematcht" en gaat naar lopende koppels</td>
+        </tr>
+        <tr>
+            <td>Exit evaluatie</td>
+            <td>→ Afgerond</td>
+            <td>Dossier wordt afgerond en gearchiveerd</td>
+        </tr>
+        <tr>
+            <td>Vrijwilliger gepauzeerd</td>
+            <td>→ Pauze</td>
+            <td>Dossier gaat naar slapende vrijwilligers</td>
+        </tr>
+    </tbody>
+</table>
+
+<h4>Vervalt na & Herhaal taak</h4>
+
+<p>Twee handige functies voor deadline management:</p>
+
+<table class="wiki-table">
+    <thead>
+        <tr>
+            <th>Functie</th>
+            <th>Gebruik</th>
+            <th>Voorbeeld</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Vervalt na</strong></td>
+            <td>Stel een deadline in voor eenmalige taken</td>
+            <td>"VOG aanvragen" vervalt na 7 dagen → herinnering naar coördinator</td>
+        </tr>
+        <tr>
+            <td><strong>Herhaal taak iedere</strong></td>
+            <td>Voor terugkerende taken op vaste momenten</td>
+            <td>"Evaluatie gesprek" herhaal elke 3 maanden → automatisch nieuwe taak</td>
+        </tr>
+    </tbody>
+</table>
+
+<div class="info-box">
+    <h4><span class="icon icon-help"></span> Herhaal opties</h4>
+    <ul>
+        <li><strong>Elke week</strong> - Kies een dag (maandag t/m zondag)</li>
+        <li><strong>Elke maand</strong> - Kies een datum (1e t/m 31e van de maand)</li>
+        <li><strong>Elke maand (oneven)</strong> - Alleen januari, maart, mei, juli, september, november</li>
+        <li><strong>Elke maand (even)</strong> - Alleen februari, april, juni, augustus, oktober, december</li>
+    </ul>
+</div>
+
+<h4>Handtekening functionaliteit (PDF)</h4>
+
+<p>Voor contracten en officiële documenten kun je handtekening functionaliteit toevoegen:</p>
+
+<ol>
+    <li><span class="icon icon-toevoegen"></span> <strong>Kies actie "Print"</strong></li>
+    <li><span class="icon icon-bewerken"></span> <strong>Vink "Handtekening (alleen PDF)" aan</strong></li>
+    <li><span class="icon icon-opslaan"></span> <strong>Upload een PDF template</strong></li>
+    <li><span class="icon icon-bewerken"></span> <strong>Markeer in de PDF waar handtekening moet komen</strong></li>
+    <li><span class="icon icon-vinkje"></span> <strong>Bij uitvoeren:</strong> medewerker/vrijwilliger kan digitaal tekenen</li>
+</ol>
+
+<h3><span class="icon icon-vragenlijsten"></span> Standaard Taken Categorieën</h3>
+
+<p>In Infomaatje kun je taken categoriseren naar proces-stap. Hier zijn voorbeelden van de 21 standaard taken:</p>
+
+<h4>1. Intake & Screening (7 taken)</h4>
+<table class="wiki-table">
+    <tbody>
+        <tr>
+            <td><strong>Intake gesprek</strong></td>
+            <td>Eerste kennismaking met nieuwe vrijwilliger of hulpvrager</td>
+        </tr>
+        <tr>
+            <td><strong>Intake gesprek hulpvrager</strong></td>
+            <td>Specifiek voor hulpvragers (kind/jongere)</td>
+        </tr>
+        <tr>
+            <td><strong>VOG aangevraagd</strong></td>
+            <td>Verklaring Omtrent Gedrag is aangevraagd bij Justis</td>
+        </tr>
+        <tr>
+            <td><strong>VOG ontvangen</strong></td>
+            <td>VOG is binnen en akkoord bevonden</td>
+        </tr>
+        <tr>
+            <td><strong>Referenten binnen</strong></td>
+            <td>Referenties zijn ontvangen en geverifieerd (met template)</td>
+        </tr>
+        <tr>
+            <td><strong>Vragenlijst referent BBBSU</strong></td>
+            <td>Automatische email naar referenten met vragenlijst (email template)</td>
+        </tr>
+        <tr>
+            <td><strong>Verzoek tot aanvullen van dossier</strong></td>
+            <td>Vraag vrijwilliger om ontbrekende gegevens aan te vullen (email template)</td>
+        </tr>
+    </tbody>
+</table>
+
+<h4>2. Training & Ontwikkeling (2 taken)</h4>
+<table class="wiki-table">
+    <tbody>
+        <tr>
+            <td><strong>Training gevolgd</strong></td>
+            <td>Vrijwilliger heeft verplichte training afgerond</td>
+        </tr>
+        <tr>
+            <td><strong>Intervisie gevolgd</strong></td>
+            <td>Vrijwilliger heeft intervisie bijgewoond</td>
+        </tr>
+    </tbody>
+</table>
+
+<h4>3. Matching Proces (6 taken)</h4>
+<table class="wiki-table">
+    <tbody>
+        <tr>
+            <td><strong>Matchen</strong></td>
+            <td>Actief bezig met het zoeken naar een match</td>
+        </tr>
+        <tr>
+            <td><strong>Gematcht</strong></td>
+            <td>Match is gemaakt, start voorbereiding (met template)</td>
+        </tr>
+        <tr>
+            <td><strong>Contact opgenomen</strong></td>
+            <td>Eerste contact is gelegd tussen match-partners (met template)</td>
+        </tr>
+        <tr>
+            <td><strong>Contact verwijzer</strong></td>
+            <td>Neem contact op met verwijzend persoon/organisatie (met template)</td>
+        </tr>
+        <tr>
+            <td><strong>Bijzonder aanbod</strong></td>
+            <td>Speciale match opportunity (met template)</td>
+        </tr>
+        <tr>
+            <td><strong>Belcontact ouder/verzorger van little</strong></td>
+            <td>Bel ouders voor kennismaking en toestemming</td>
+        </tr>
+    </tbody>
+</table>
+
+<h4>4. Contracten (2 taken)</h4>
+<table class="wiki-table">
+    <tbody>
+        <tr>
+            <td><strong>Contract opmaken</strong></td>
+            <td>Genereer contract automatisch uit template (Word template)</td>
+        </tr>
+        <tr>
+            <td><strong>Contract getekend ontvangen</strong></td>
+            <td>Getekend contract is binnen en geregistreerd (met template)</td>
+        </tr>
+    </tbody>
+</table>
+
+<h4>5. Monitoring & Evaluatie (2 taken)</h4>
+<table class="wiki-table">
+    <tbody>
+        <tr>
+            <td><strong>Match gestopt</strong></td>
+            <td>Match is beëindigd, start evaluatie proces (met template)</td>
+        </tr>
+        <tr>
+            <td><strong>Big Slapend</strong></td>
+            <td>Vrijwilliger is tijdelijk niet actief</td>
+        </tr>
+    </tbody>
+</table>
+
+<h4>6. Custom Taken (2 voorbeelden)</h4>
+<table class="wiki-table">
+    <tbody>
+        <tr>
+            <td><strong>Met een eerste taak</strong></td>
+            <td>Voorbeeld van custom taak met template 30</td>
+        </tr>
+        <tr>
+            <td><strong>Met een tweede taak</strong></td>
+            <td>Voorbeeld van custom taak met template 31</td>
+        </tr>
+    </tbody>
+</table>
+
+<h3><span class="icon icon-zoeken"></span> Taken zoeken en filteren</h3>
+
+<p>Gebruik de zoekfunctie om snel taken te vinden:</p>
+
+<ol>
+    <li><span class="icon icon-zoeken"></span> <strong>Typ in het Filter veld</strong> rechtsboven in de tabel</li>
+    <li><span class="icon icon-tijd"></span> <strong>De lijst filtert automatisch</strong> terwijl je typt</li>
+    <li><span class="icon icon-bewerken"></span> <strong>Klik op de taak naam</strong> om te bewerken</li>
+</ol>
+
+<div class="info-box">
+    <h4><span class="icon icon-help"></span> Zoektips</h4>
+    <ul>
+        <li>Zoek op deel van de naam: "intake" vindt alle intake-gerelateerde taken</li>
+        <li>Zoek op categorie: "contract", "vog", "match", etc.</li>
+        <li>De zoekfunctie is niet hoofdlettergevoelig</li>
+    </ul>
+</div>
+
+<h3><span class="icon icon-tijd"></span> Workflow & Automatisering</h3>
+
+<p>Taken kunnen automatisch worden aangemaakt wanneer bepaalde gebeurtenissen plaatsvinden:</p>
+
+<table class="wiki-table">
+    <thead>
+        <tr>
+            <th>Trigger</th>
+            <th>Automatische Taak</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Nieuw vrijwilliger dossier aangemaakt</td>
+            <td>→ Taak "Intake gesprek" wordt aangemaakt</td>
+        </tr>
+        <tr>
+            <td>Status wijzigt naar "Match gemaakt"</td>
+            <td>→ Taak "Gematcht" met template voor kennismakingsbrief</td>
+        </tr>
+        <tr>
+            <td>Match wordt beëindigd</td>
+            <td>→ Taak "Match gestopt" voor evaluatie</td>
+        </tr>
+        <tr>
+            <td>VOG vervaldatum nadert</td>
+            <td>→ Automatische herinnering naar vrijwilliger</td>
+        </tr>
+    </tbody>
+</table>
+
+<div class="info-box">
+    <h4><span class="icon icon-info"></span> Workflow instellen</h4>
+    <p>Workflows worden geconfigureerd via de taak instellingen (parkeerplaats koppeling en status na verwerking). Gebruik de velden in het taak formulier om automatische workflows te creëren.</p>
+</div>
+
+<h3><span class="icon icon-verwijder"></span> Taken verwijderen</h3>
+
+<p>Je kunt alleen taken verwijderen die <strong>niet in gebruik zijn</strong>:</p>
+
+<table class="wiki-table">
+    <thead>
+        <tr>
+            <th>Status</th>
+            <th>Verwijderen mogelijk?</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><span class="icon icon-vinkje"></span> Taak zonder template, nooit uitgevoerd</td>
+            <td>✓ Ja, verwijder icoon is zichtbaar</td>
+        </tr>
+        <tr>
+            <td><span class="icon icon-waarschuwing"></span> Taak met template koppeling</td>
+            <td>! Alleen als template niet in gebruik is</td>
+        </tr>
+        <tr>
+            <td><span class="icon icon-cancel"></span> Taak is uitgevoerd in dossiers</td>
+            <td>✗ Nee, geen verwijder icoon</td>
+        </tr>
+        <tr>
+            <td><span class="icon icon-cancel"></span> Taak gekoppeld aan workflow</td>
+            <td>✗ Nee, zou workflow breken</td>
+        </tr>
+    </tbody>
+</table>
+
+<div class="warning-box">
+    <h4><span class="icon icon-waarschuwing"></span> Let op bij verwijderen!</h4>
+    <p>Verwijderde taken zijn <strong>permanent weg</strong>. Je kunt ze niet herstellen. Overweeg in plaats daarvan:</p>
+    <ul>
+        <li>De taak een duidelijke naam geven zoals "OUD - Contract opmaken"</li>
+        <li>Een notitie toevoegen dat de taak niet meer gebruikt wordt</li>
+        <li>De template koppeling verwijderen in plaats van de hele taak</li>
+    </ul>
+</div>
+
+<h3><span class="icon icon-help"></span> Best Practices</h3>
+
+<table class="wiki-table">
+    <thead>
+        <tr>
+            <th>Do ✓</th>
+            <th>Don't ✗</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Gebruik duidelijke, actieve namen ("VOG aanvragen")</td>
+            <td>Vage namen ("Administratie", "Overig")</td>
+        </tr>
+        <tr>
+            <td>Groepeer taken logisch per categorie</td>
+            <td>Willekeurige volgorde zonder structuur</td>
+        </tr>
+        <tr>
+            <td>Test taken grondig voordat je workflows instelt</td>
+            <td>Direct workflows inschakelen zonder testen</td>
+        </tr>
+        <tr>
+            <td>Documenteer welke variabelen beschikbaar zijn</td>
+            <td>Templates maken zonder uitleg</td>
+        </tr>
+        <tr>
+            <td>Maak herbruikbare taken en templates</td>
+            <td>Voor elke situatie een nieuwe taak maken</td>
+        </tr>
+        <tr>
+            <td>Gebruik conventies: "Intake -", "Evaluatie -"</td>
+            <td>Inconsistente naamgeving door het team</td>
+        </tr>
+        <tr>
+            <td>Begin met simpele "Check" taken, voeg later automatisering toe</td>
+            <td>Direct complexe workflows bouwen</td>
+        </tr>
+    </tbody>
+</table>
+
+<h3><span class="icon icon-help"></span> Veelgestelde vragen</h3>
+
+<table class="wiki-table">
+    <thead>
+        <tr>
+            <th>Vraag</th>
+            <th>Antwoord</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Kan ik een taak aanpassen nadat deze is uitgevoerd?</td>
+            <td>Ja, maar wijzigingen gelden alleen voor nieuwe uitvoeringen. Oude uitvoeringen blijven ongewijzigd.</td>
+        </tr>
+        <tr>
+            <td>Hoe voeg ik een template toe aan een bestaande taak?</td>
+            <td>Bewerk de taak, kies het juiste actie type (Mail of Print), en koppel het template aan de actie.</td>
+        </tr>
+        <tr>
+            <td>Kunnen medewerkers zonder admin rechten taken aanmaken?</td>
+            <td>Nee, alleen administrators kunnen taak types beheren. Medewerkers kunnen taken uitvoeren.</td>
+        </tr>
+        <tr>
+            <td>Wat gebeurt er als ik een taak verwijder die nog in gebruik is?</td>
+            <td>Het systeem voorkomt dit. Je ziet geen verwijder button bij taken die in gebruik zijn.</td>
+        </tr>
+        <tr>
+            <td>Hoe stel ik een terugkerende taak in?</td>
+            <td>Gebruik het veld "Herhaal taak iedere" en kies een frequentie (week/maand) en specifieke dag.</td>
+        </tr>
+        <tr>
+            <td>Kan ik taken automatisch laten aanmaken?</td>
+            <td>Ja! Koppel een taak aan een parkeerplaats, dan wordt de taak automatisch aangemaakt voor dossiers in die parkeerplaats.</td>
+        </tr>
+    </tbody>
+</table>
+
+<div class="info-box">
+    <h4><span class="icon icon-help"></span> Meer hulp nodig?</h4>
+    <p>Voor complexe workflow configuraties, custom templates, of technische vragen over taken automatisering, neem contact op met je systeem beheerder of Infomaatje support.</p>
+</div>
+
+<div class="wiki-page-nav">
+    <a href="#" data-page="admin-vragenlijsten" class="btn-prev"><span class="icon icon-pijl-links"></span> Vorige: Vragenlijsten Beheer</a>
+    <a href="#" data-page="notities" class="btn-next">Volgende: Notities <span class="icon icon-pijl-rechts"></span></a>
+</div>

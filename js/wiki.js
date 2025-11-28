@@ -18,7 +18,8 @@ const pageIndex = {
     "admin-vragenlijsten": { title: "Vragenlijsten Beheer", file: "wiki-pages/admin-vragenlijsten.html" },
     "admin-taken": { title: "Taken Beheer", file: "wiki-pages/admin-taken.html" },
     weeklies: { title: "Weeklies", file: "wiki-pages/weeklies.html" },
-    autorisatie: { title: "Autorisatie", file: "wiki-pages/autorisatie.html" }
+    autorisatie: { title: "Autorisatie", file: "wiki-pages/autorisatie.html" },
+    woordenlijst: { title: "Woordenlijst", file: "wiki-pages/woordenlijst.html" }
 };
 
 // Cache voor geladen pagina's (voor zoekfunctie)

@@ -3,24 +3,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
+<!-- CHECKLIJSTEN.HTML - Uitgebreide gebruikers/admin versie -->
 
-<!-- CHECKLIJSTEN.HTML -->
 <nav class="breadcrumbs">
     <a href="#" data-page="home">Home</a> / Dossiers / Checklijsten
 </nav>
 
 <h2><span class="icon icon-checklijsten icon-primary"></span> Checklijsten</h2>
 
-<p>Checklijsten helpen bij het structureren van werkprocessen en zorgen voor consistentie.</p>
+<p>Checklijsten helpen bij het structureren van werkprocessen door meerdere taken te groeperen tot een samenhangend proces. Zowel medewerkers als administrators kunnen met checklijsten werken.</p>
 
-<h3><span class="icon icon-vinkje"></span> Checklist gebruiken</h3>
+<h3><span class="icon icon-help"></span> Wat zijn checklijsten?</h3>
+
+<p>Een checklist is een <strong>verzameling van taken</strong> die samen een proces vormen. In plaats van losse taken aan een dossier toe te voegen, groepeer je gerelateerde taken in één checklist. Dit zorgt voor:</p>
+
+<ul>
+    <li><strong>Structuur</strong> - Duidelijke processtappen voor medewerkers</li>
+    <li><strong>Consistentie</strong> - Iedereen volgt hetzelfde proces</li>
+    <li><strong>Overzicht</strong> - Voortgang in één oogopslag zichtbaar</li>
+    <li><strong>Volledigheid</strong> - Geen stappen worden overgeslagen</li>
+</ul>
+
+<h4>Verschil tussen taken en checklijsten</h4>
+
+<table class="wiki-table">
+    <thead>
+        <tr>
+            <th style="width: 30%;">Aspect</th>
+            <th style="width: 35%;">Taak</th>
+            <th style="width: 35%;">Checklist</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Definitie</strong></td>
+            <td>Enkele actie die uitgevoerd moet worden</td>
+            <td>Verzameling van taken die samen proces vormen</td>
+        </tr>
+        <tr>
+            <td><strong>Voorbeeld</strong></td>
+            <td>"Intake gesprek", "VOG aanvragen"</td>
+            <td>"Aanmelden vrijwilliger" (bevat Intake + VOG + Training + etc.)</td>
+        </tr>
+        <tr>
+            <td><strong>Gebruik</strong></td>
+            <td>Voor losse acties</td>
+            <td>Voor complete werkprocessen</td>
+        </tr>
+        <tr>
+            <td><strong>Voortgang</strong></td>
+            <td>Gedaan of niet gedaan</td>
+            <td>X van Y taken voltooid</td>
+        </tr>
+    </tbody>
+</table>
+
+<div class="info-box">
+    <h4><span class="icon icon-info"></span> Wanneer gebruik je een checklist?</h4>
+    <p>Gebruik checklijsten voor:</p>
+    <ul>
+        <li><strong>Onboarding vrijwilligers</strong> - Intake, screening, training, contract</li>
+        <li><strong>Aanmelden hulpvragers</strong> - Kennismaking, intake, documenten, matching</li>
+        <li><strong>Matching proces</strong> - Match voorstel, kennismaking, start begeleiding</li>
+        <li><strong>Evaluatie proces</strong> - 3 maanden, 6 maanden, jaarlijks gesprek</li>
+        <li><strong>Afsluit proces</strong> - Exit gesprek, evaluatie, administratie afsluiten</li>
+    </ul>
+</div>
+
+<h3><span class="icon icon-vinkje"></span> Checklist gebruiken in dossier</h3>
+
+<p>Als medewerker werk je met checklijsten in dossiers. Zo doe je dat:</p>
 
 <ol>
-    <li><span class="icon icon-dossier"></span> Open het dossier</li>
-    <li><span class="icon icon-checklijsten"></span> Selecteer de juiste checklist</li>
-    <li><span class="icon icon-vinkje"></span> Vink items af naarmate ze voltooid zijn</li>
-    <li><span class="icon icon-opslaan"></span> Bewaar de voortgang</li>
+    <li><span class="icon icon-dossier"></span> <strong>Open het dossier</strong></li>
+    <li><span class="icon icon-checklijsten"></span> <strong>Ga naar tab "Checklijsten"</strong></li>
+    <li><span class="icon icon-zoeken"></span> <strong>Selecteer de checklist</strong> (automatisch of handmatig toegevoegd)</li>
+    <li><span class="icon icon-vinkje"></span> <strong>Vink taken af</strong> naarmate ze voltooid zijn</li>
+    <li><span class="icon icon-opslaan"></span> <strong>Voortgang wordt automatisch opgeslagen</strong></li>
 </ol>
+
+<h4>Status van checklijsten</h4>
 
 <table class="wiki-table">
     <thead>
@@ -32,20 +94,350 @@
     <tbody>
         <tr>
             <td><span class="status-nieuw">Nieuw</span></td>
-            <td>Checklist nog niet gestart</td>
+            <td>Checklist is toegevoegd maar nog niet gestart</td>
         </tr>
         <tr>
             <td><span class="status-pending">In behandeling</span></td>
-            <td>Bezig met invullen</td>
+            <td>Enkele taken zijn voltooid, andere nog open</td>
         </tr>
         <tr>
             <td><span class="status-actief">Compleet</span></td>
-            <td>Alle items afgevinkt</td>
+            <td>Alle taken zijn afgevinkt en voltooid</td>
         </tr>
     </tbody>
 </table>
 
+<div class="info-box">
+    <h4><span class="icon icon-info"></span> Voortgang bijhouden</h4>
+    <p>In het dossier zie je:</p>
+    <ul>
+        <li><strong>Totaal</strong>: "4 van 7 taken voltooid"</li>
+        <li><strong>Percentage</strong>: "57% compleet"</li>
+        <li><strong>Per taak</strong>: Afgevinkt of nog open</li>
+        <li><strong>Deadline</strong>: "Vervalt over 12 dagen"</li>
+    </ul>
+</div>
+
+<h3><span class="icon icon-toevoegen"></span> Checklist toevoegen aan dossier</h3>
+
+<p>Soms wil je een extra checklist toevoegen aan een dossier:</p>
+
+<ol>
+    <li><span class="icon icon-dossier"></span> <strong>Open het dossier</strong></li>
+    <li><span class="icon icon-checklijsten"></span> <strong>Ga naar tab "Checklijsten"</strong></li>
+    <li><span class="icon icon-toevoegen"></span> <strong>Klik "Checklist toevoegen"</strong></li>
+    <li><span class="icon icon-zoeken"></span> <strong>Selecteer een checklist</strong> uit de lijst</li>
+    <li><span class="icon icon-opslaan"></span> <strong>De checklist wordt toegevoegd</strong></li>
+</ol>
+
+<h3><span class="icon icon-vragenlijsten"></span> Veelgebruikte checklijsten</h3>
+
+<p>Hier zijn voorbeelden van checklijsten die je vaak tegenkomt:</p>
+
+<h4>Voorbeeld 1: Aanmelden vrijwilliger</h4>
+
+<table class="wiki-table">
+    <tbody>
+        <tr>
+            <td><strong>Doel</strong></td>
+            <td>Volledige onboarding van nieuwe vrijwilliger</td>
+        </tr>
+        <tr>
+            <td><strong>Taken (7)</strong></td>
+            <td>
+                1. Intake gesprek<br>
+                2. VOG aangevraagd<br>
+                3. Referenten binnen<br>
+                4. VOG ontvangen<br>
+                5. Training gevolgd<br>
+                6. Contract opmaken<br>
+                7. Contract getekend ontvangen
+            </td>
+        </tr>
+        <tr>
+            <td><strong>Resultaat</strong></td>
+            <td>Vrijwilliger volledig gescreend en klaar om te starten</td>
+        </tr>
+    </tbody>
+</table>
+
+<h4>Voorbeeld 2: Aanmelden hulpvrager</h4>
+
+<table class="wiki-table">
+    <tbody>
+        <tr>
+            <td><strong>Doel</strong></td>
+            <td>Intake en matching hulpvrager</td>
+        </tr>
+        <tr>
+            <td><strong>Taken (5)</strong></td>
+            <td>
+                1. Intake gesprek hulpvrager<br>
+                2. Belcontact ouder/verzorger van little<br>
+                3. Verzoek tot aanvullen van dossier<br>
+                4. Matchen<br>
+                5. Gematcht
+            </td>
+        </tr>
+        <tr>
+            <td><strong>Resultaat</strong></td>
+            <td>Hulpvrager volledig in beeld en match voorbereid</td>
+        </tr>
+    </tbody>
+</table>
+
+<h4>Voorbeeld 3: Evaluatie 3 maanden</h4>
+
+<table class="wiki-table">
+    <tbody>
+        <tr>
+            <td><strong>Doel</strong></td>
+            <td>Eerste evaluatie na 3 maanden match</td>
+        </tr>
+        <tr>
+            <td><strong>Taken (3)</strong></td>
+            <td>
+                1. Belcontact ouder/verzorger van little<br>
+                2. Contact opgenomen (met vrijwilliger)<br>
+                3. Evaluatie vragenlijst
+            </td>
+        </tr>
+        <tr>
+            <td><strong>Resultaat</strong></td>
+            <td>Inzicht in hoe match verloopt, eventuele aandachtspunten</td>
+        </tr>
+    </tbody>
+</table>
+
+<div class="warning-box">
+    <h4><span class="icon icon-waarschuwing"></span> Administrator functies</h4>
+    <p>Administrators hebben extra mogelijkheden voor checklijsten beheer:</p>
+    <ul>
+        <li><strong>Nieuwe checklijsten aanmaken</strong> - Via Admin → Checklijsten</li>
+        <li><strong>Taken koppelen</strong> - Selecteer welke taken in de checklist komen</li>
+        <li><strong>Vervalt na instellen</strong> - Deadline voor de hele checklist</li>
+        <li><strong>Parkeerplaats koppeling</strong> - Automatisch checklijsten toewijzen</li>
+    </ul>
+    <p>Neem contact op met je administrator als je nieuwe checklijsten nodig hebt of bestaande checklijsten wilt aanpassen.</p>
+</div>
+
+<h3><span class="icon icon-help"></span> Checklijsten beheren (administrators)</h3>
+
+<p>Als je administrator rechten hebt, kun je checklijsten beheren via het admin paneel:</p>
+
+<h4>Nieuwe checklist aanmaken</h4>
+
+<ol>
+    <li><span class="icon icon-admin"></span> <strong>Ga naar Admin paneel</strong> → Checklijsten</li>
+    <li><span class="icon icon-toevoegen"></span> <strong>Klik op "Nieuwe checklist"</strong></li>
+    <li><span class="icon icon-bewerken"></span> <strong>Vul formulier in:</strong>
+        <ul>
+            <li>Omschrijving (verplicht)</li>
+            <li>Vervalt na (optioneel)</li>
+            <li>Taken koppelen (minimaal 1)</li>
+            <li>Parkeerplaats per taak (optioneel)</li>
+        </ul>
+    </li>
+    <li><span class="icon icon-opslaan"></span> <strong>Sla de checklist op</strong></li>
+</ol>
+
+<h4>Taken aan checklist koppelen</h4>
+
+<p>Je kunt kiezen uit 21 standaard taken, gegroepeerd in categorieën:</p>
+
+<table class="wiki-table">
+    <thead>
+        <tr>
+            <th>Categorie</th>
+            <th>Taken</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Intake & Screening</strong></td>
+            <td>Intake gesprek, Intake gesprek hulpvrager, VOG aangevraagd, VOG ontvangen, Referenten binnen, Vragenlijst referent BBBSU, Verzoek tot aanvullen van dossier</td>
+        </tr>
+        <tr>
+            <td><strong>Training</strong></td>
+            <td>Training gevolgd, Intervisie gevolgd</td>
+        </tr>
+        <tr>
+            <td><strong>Matching</strong></td>
+            <td>Matchen, Gematcht, Contact opgenomen, Contact verwijzer, Bijzonder aanbod, Belcontact ouder/verzorger</td>
+        </tr>
+        <tr>
+            <td><strong>Contracten</strong></td>
+            <td>Contract opmaken, Contract getekend ontvangen</td>
+        </tr>
+        <tr>
+            <td><strong>Monitoring</strong></td>
+            <td>Match gestopt, Big Slapend</td>
+        </tr>
+        <tr>
+            <td><strong>Custom</strong></td>
+            <td>Met een eerste taak, Met een tweede taak</td>
+        </tr>
+    </tbody>
+</table>
+
+<div class="info-box">
+    <h4><span class="icon icon-help"></span> Parkeerplaats per taak</h4>
+    <p>Door een parkeerplaats aan elke taak te koppelen, bepaal je <strong>waar de taak zichtbaar</strong> wordt:</p>
+    <ul>
+        <li>Taak met parkeerplaats "Kandidaat vrijwilligers" → Alleen zichtbaar bij kandidaten</li>
+        <li>Taak met parkeerplaats "Lopende koppels" → Alleen zichtbaar bij actieve matches</li>
+        <li>Taak zonder parkeerplaats → Altijd zichtbaar (standaard)</li>
+    </ul>
+</div>
+
+<h4>Vervalt na instellen</h4>
+
+<p>Met "Vervalt na" stel je een deadline in voor de hele checklist:</p>
+
+<table class="wiki-table">
+    <thead>
+        <tr>
+            <th style="width: 30%;">Voorbeeld</th>
+            <th style="width: 40%;">Instelling</th>
+            <th style="width: 30%;">Effect</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Aanmelden vrijwilliger</td>
+            <td>Vervalt na: 30 dagen</td>
+            <td>Herinnering na 30 dagen als niet compleet</td>
+        </tr>
+        <tr>
+            <td>Evaluatie 3 maanden</td>
+            <td>Vervalt na: 14 dagen</td>
+            <td>Moet binnen 2 weken voltooid zijn</td>
+        </tr>
+        <tr>
+            <td>Intake proces</td>
+            <td>Vervalt na: 3 weken</td>
+            <td>21 dagen om intake af te ronden</td>
+        </tr>
+    </tbody>
+</table>
+
+<h4>Checklijsten zoeken en filteren</h4>
+
+<p>In het admin overzicht kun je zoeken:</p>
+
+<ul>
+    <li><span class="icon icon-zoeken"></span> Typ in het zoek veld rechtsboven</li>
+    <li><span class="icon icon-tijd"></span> De lijst filtert automatisch</li>
+    <li><span class="icon icon-bewerken"></span> Klik op de checklist om te bewerken</li>
+</ul>
+
+<h4>Checklijsten verwijderen</h4>
+
+<p>Je kunt alleen checklijsten verwijderen die <strong>niet in gebruik zijn</strong>:</p>
+
+<table class="wiki-table">
+    <thead>
+        <tr>
+            <th>Status</th>
+            <th>Verwijderen mogelijk?</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><span class="icon icon-vinkje"></span> Checklist nooit gebruikt</td>
+            <td>✓ Ja, verwijder icoon is zichtbaar</td>
+        </tr>
+        <tr>
+            <td><span class="icon icon-cancel"></span> Checklist in gebruik bij dossiers</td>
+            <td>✗ Nee, geen verwijder icoon</td>
+        </tr>
+        <tr>
+            <td><span class="icon icon-cancel"></span> Checklist gekoppeld aan parkeerplaats</td>
+            <td>✗ Nee, zou automatische koppeling breken</td>
+        </tr>
+    </tbody>
+</table>
+
+<h3><span class="icon icon-help"></span> Best Practices</h3>
+
+<table class="wiki-table">
+    <thead>
+        <tr>
+            <th>Do ✓</th>
+            <th>Don't ✗</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Vink taken af zodra ze voltooid zijn</td>
+            <td>Wachten tot alle taken klaar zijn</td>
+        </tr>
+        <tr>
+            <td>Check deadlines regelmatig (vervalt na)</td>
+            <td>Deadline negeren tot laatste moment</td>
+        </tr>
+        <tr>
+            <td>Gebruik checklijsten consistent voor elk dossier</td>
+            <td>Sommige dossiers wel, andere niet</td>
+        </tr>
+        <tr>
+            <td>Voeg notities toe bij bijzonderheden</td>
+            <td>Alleen afvinken zonder context</td>
+        </tr>
+        <tr>
+            <td>Volg de volgorde van taken zoals bedoeld</td>
+            <td>Random taken afvinken in willekeurige volgorde</td>
+        </tr>
+    </tbody>
+</table>
+
+<h3><span class="icon icon-help"></span> Veelgestelde vragen</h3>
+
+<table class="wiki-table">
+    <thead>
+        <tr>
+            <th>Vraag</th>
+            <th>Antwoord</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Kan ik een taak afvinken als deze nog niet helemaal af is?</td>
+            <td>Nee, vink alleen taken af die volledig voltooid zijn. Gebruik notities voor tussenstand.</td>
+        </tr>
+        <tr>
+            <td>Wat gebeurt er als een checklist vervalt?</td>
+            <td>De checklist blijft zichtbaar met een waarschuwing. Je ontvangt herinneringen.</td>
+        </tr>
+        <tr>
+            <td>Kan ik meerdere checklijsten aan één dossier koppelen?</td>
+            <td>Ja, je kunt meerdere checklijsten toevoegen als dat nodig is.</td>
+        </tr>
+        <tr>
+            <td>Hoe weet ik welke checklijsten automatisch worden toegevoegd?</td>
+            <td>Dit hangt af van de parkeerplaats waar het dossier in staat. Vraag je administrator.</td>
+        </tr>
+        <tr>
+            <td>Kan ik een checklist verwijderen uit een dossier?</td>
+            <td>Nee, eenmaal toegevoegde checklijsten blijven in het dossier. Je kunt wel alle taken afvinken.</td>
+        </tr>
+        <tr>
+            <td>Kan ik een nieuwe checklist aanmaken?</td>
+            <td>Alleen administrators kunnen nieuwe checklijsten aanmaken. Neem contact op als je er één nodig hebt.</td>
+        </tr>
+        <tr>
+            <td>Wat als een taak in de checklist niet van toepassing is?</td>
+            <td>Overleg met je leidinggevende. Sommige taken kunnen worden overgeslagen met toestemming.</td>
+        </tr>
+    </tbody>
+</table>
+
+<div class="info-box">
+    <h4><span class="icon icon-help"></span> Meer hulp nodig?</h4>
+    <p>Heb je vragen over checklijsten of loop je tegen problemen aan? Neem contact op met je leidinggevende of systeem beheerder voor ondersteuning.</p>
+</div>
+
 <div class="wiki-page-nav">
-    <a href="#" data-page="vragenlijsten" class="btn-prev"><span class="icon icon-pijl-links"></span> Vorige</a>
-    <a href="#" data-page="koppels" class="btn-next">Volgende <span class="icon icon-pijl-rechts"></span></a>
+    <a href="#" data-page="vragenlijsten" class="btn-prev"><span class="icon icon-pijl-links"></span> Vorige: Vragenlijsten</a>
+    <a href="#" data-page="koppels" class="btn-next">Volgende: Koppels <span class="icon icon-pijl-rechts"></span></a>
 </div>
