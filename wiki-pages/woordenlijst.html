@@ -1,0 +1,426 @@
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+
+<nav class="breadcrumbs">
+    <a href="#" data-page="home">Home</a> / Overige / Woordenlijst
+</nav>
+
+<h2><span class="icon icon-code icon-primary"></span> Woordenlijst - Template variabelen</h2>
+
+<p>De woordenlijst bevat variabelen die je kunt gebruiken in email en document templates. Deze variabelen worden automatisch vervangen met gegevens uit het systeem, zodat je niet handmatig namen, adressen of andere informatie hoeft in te vullen.</p>
+
+<h3><span class="icon icon-help"></span> Wat zijn template variabelen?</h3>
+
+<p>Template variabelen zijn <strong>placeholders</strong> die je in templates kunt gebruiken. Bij het versturen of genereren van een document worden deze automatisch vervangen met de juiste gegevens uit het dossier.</p>
+
+<h4>Voorbeelden</h4>
+
+<ul>
+    <li><code>{dossier_naam}</code> wordt vervangen door de naam van de persoon</li>
+    <li><code>{dossier_email}</code> wordt vervangen door het email adres</li>
+    <li><code>{medewerker_naam}</code> wordt vervangen door de naam van de medewerker</li>
+    <li><code>{vandaag}</code> wordt vervangen door de huidige datum</li>
+</ul>
+
+<div class="info-box">
+    <h4><span class="icon icon-info"></span> Waarom template variabelen gebruiken?</h4>
+    <ul>
+        <li><strong>Tijdsbesparing</strong> - Geen handmatig typen van namen en gegevens</li>
+        <li><strong>Geen typefouten</strong> - Gegevens komen direct uit het systeem</li>
+        <li><strong>Altijd actueel</strong> - Als gegevens wijzigen, zijn templates automatisch up-to-date</li>
+        <li><strong>Persoonlijk</strong> - Elke email of brief is gepersonaliseerd</li>
+    </ul>
+</div>
+
+<h3><span class="icon icon-vinkje"></span> Hoe gebruik je de woordenlijst?</h3>
+
+<ol>
+    <li><span class="icon icon-admin"></span> <strong>Ga naar Admin paneel</strong> → Woordenlijst (in sidebar)</li>
+    <li><span class="icon icon-zoeken"></span> <strong>Zoek de variabele</strong> die je nodig hebt in de lijst</li>
+    <li><span class="icon icon-kopieer"></span> <strong>Kopieer de variabele naam</strong> exact (inclusief de { } haakjes)</li>
+    <li><span class="icon icon-bewerken"></span> <strong>Plak in je template</strong> (email template of Word document)</li>
+    <li><span class="icon icon-opslaan"></span> <strong>Sla je template op</strong></li>
+</ol>
+
+<div class="warning-box">
+    <h4><span class="icon icon-waarschuwing"></span> Belangrijk bij het gebruik van variabelen</h4>
+    <ul>
+        <li>Gebruik <strong>exact</strong> dezelfde schrijfwijze (inclusief { en } haakjes)</li>
+        <li>Variabelen zijn <strong>hoofdlettergevoelig</strong> - {Dossier_naam} werkt niet!</li>
+        <li>Kopieer variabelen altijd vanuit de woordenlijst om typefouten te voorkomen</li>
+        <li>Test altijd je template met een test-dossier voordat je het in productie gebruikt</li>
+        <li>Niet alle variabelen zijn in elk dossier beschikbaar (bijv. match_naam alleen bij koppels)</li>
+    </ul>
+</div>
+
+<h3><span class="icon icon-lijst"></span> Meest gebruikte variabelen</h3>
+
+<p>Hieronder vind je de variabelen die het meest worden gebruikt in templates:</p>
+
+<h4>Dossier informatie</h4>
+
+<table class="wiki-table">
+    <thead>
+        <tr>
+            <th style="width: 35%;">Variabele</th>
+            <th style="width: 65%;">Beschrijving</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><code>{dossierGetalGetal}</code></td>
+            <td>Laatste 4 cijfers van het dossiernummer</td>
+        </tr>
+        <tr>
+            <td><code>{dossier_naam}</code></td>
+            <td>Volledige naam van het dossier (voornaam + tussenvoegsel + achternaam)</td>
+        </tr>
+        <tr>
+            <td><code>{dossier_voornaam}</code></td>
+            <td>Voornaam van de persoon in het dossier</td>
+        </tr>
+        <tr>
+            <td><code>{dossier_tussenvoegsel}</code></td>
+            <td>Tussenvoegsel (van, de, van der, etc.)</td>
+        </tr>
+        <tr>
+            <td><code>{dossier_achternaam}</code></td>
+            <td>Achternaam van het dossier</td>
+        </tr>
+        <tr>
+            <td><code>{dossier_geslacht}</code></td>
+            <td>Geslacht van de persoon</td>
+        </tr>
+        <tr>
+            <td><code>{dossier_geboortedatum}</code></td>
+            <td>Geboortedatum van het dossier</td>
+        </tr>
+    </tbody>
+</table>
+
+<h4>Contact gegevens</h4>
+
+<table class="wiki-table">
+    <thead>
+        <tr>
+            <th style="width: 35%;">Variabele</th>
+            <th style="width: 65%;">Beschrijving</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><code>{dossier_adres}</code></td>
+            <td>Straatnaam en huisnummer</td>
+        </tr>
+        <tr>
+            <td><code>{dossier_postcode}</code></td>
+            <td>Postcode van het dossier</td>
+        </tr>
+        <tr>
+            <td><code>{dossier_woonplaats}</code></td>
+            <td>Woonplaats van het dossier</td>
+        </tr>
+        <tr>
+            <td><code>{dossier_telefoon}</code></td>
+            <td>Telefoonnummer van het dossier</td>
+        </tr>
+        <tr>
+            <td><code>{dossier_mobiel}</code></td>
+            <td>Mobiel telefoonnummer</td>
+        </tr>
+        <tr>
+            <td><code>{dossier_email}</code></td>
+            <td>Email adres van het dossier</td>
+        </tr>
+    </tbody>
+</table>
+
+<h4>Medewerker informatie</h4>
+
+<table class="wiki-table">
+    <thead>
+        <tr>
+            <th style="width: 35%;">Variabele</th>
+            <th style="width: 65%;">Beschrijving</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><code>{medewerker_naam}</code></td>
+            <td>Naam van de verantwoordelijke medewerker</td>
+        </tr>
+        <tr>
+            <td><code>{medewerker_voornaam}</code></td>
+            <td>Voornaam van de medewerker</td>
+        </tr>
+        <tr>
+            <td><code>{medewerker_email}</code></td>
+            <td>Email adres van de medewerker</td>
+        </tr>
+        <tr>
+            <td><code>{medewerker_telefoon}</code></td>
+            <td>Telefoonnummer van de medewerker</td>
+        </tr>
+    </tbody>
+</table>
+
+<h4>Match/Koppel informatie</h4>
+
+<table class="wiki-table">
+    <thead>
+        <tr>
+            <th style="width: 35%;">Variabele</th>
+            <th style="width: 65%;">Beschrijving</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><code>{match_naam}</code></td>
+            <td>Naam van de match partner (bij koppels)</td>
+        </tr>
+        <tr>
+            <td><code>{match_voornaam}</code></td>
+            <td>Voornaam van de match partner</td>
+        </tr>
+        <tr>
+            <td><code>{match_email}</code></td>
+            <td>Email adres van de match partner</td>
+        </tr>
+        <tr>
+            <td><code>{match_telefoon}</code></td>
+            <td>Telefoonnummer van de match partner</td>
+        </tr>
+    </tbody>
+</table>
+
+<h4>Organisatie en datum</h4>
+
+<table class="wiki-table">
+    <thead>
+        <tr>
+            <th style="width: 35%;">Variabele</th>
+            <th style="width: 65%;">Beschrijving</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><code>{organisatie_naam}</code></td>
+            <td>Naam van je organisatie</td>
+        </tr>
+        <tr>
+            <td><code>{organisatie_adres}</code></td>
+            <td>Adres van je organisatie</td>
+        </tr>
+        <tr>
+            <td><code>{organisatie_telefoon}</code></td>
+            <td>Telefoonnummer van je organisatie</td>
+        </tr>
+        <tr>
+            <td><code>{organisatie_email}</code></td>
+            <td>Email adres van je organisatie</td>
+        </tr>
+        <tr>
+            <td><code>{vandaag}</code></td>
+            <td>Huidige datum (wordt automatisch ingevuld bij versturen)</td>
+        </tr>
+    </tbody>
+</table>
+
+<h3><span class="icon icon-bewerken"></span> Template voorbeelden</h3>
+
+<h4>Voorbeeld 1: Email template</h4>
+
+<p><strong>Template met variabelen:</strong></p>
+
+<div style="background: #f5f5f5; padding: 15px; border-left: 4px solid #007bff; margin: 10px 0;">
+<code>
+Beste {dossier_voornaam},<br><br>
+
+Bedankt voor je aanmelding bij {organisatie_naam}.<br><br>
+
+Ik ben {medewerker_naam}, je contactpersoon. Je kunt me bereiken via:<br>
+- Email: {medewerker_email}<br>
+- Telefoon: {medewerker_telefoon}<br><br>
+
+We nemen binnen 5 werkdagen contact met je op.<br><br>
+
+Met vriendelijke groet,<br>
+{medewerker_naam}<br>
+{organisatie_naam}
+</code>
+</div>
+
+<p><strong>Wordt bij verzenden op 15 januari 2025:</strong></p>
+
+<div style="background: #f5f5f5; padding: 15px; border-left: 4px solid #28a745; margin: 10px 0;">
+Beste Jan,<br><br>
+
+Bedankt voor je aanmelding bij Vrijwilligersorganisatie Amsterdam.<br><br>
+
+Ik ben Marie Jansen, je contactpersoon. Je kunt me bereiken via:<br>
+- Email: m.jansen@voa.nl<br>
+- Telefoon: 020-1234567<br><br>
+
+We nemen binnen 5 werkdagen contact met je op.<br><br>
+
+Met vriendelijke groet,<br>
+Marie Jansen<br>
+Vrijwilligersorganisatie Amsterdam
+</div>
+
+<h4>Voorbeeld 2: Brief template (Word document)</h4>
+
+<p><strong>Template met variabelen:</strong></p>
+
+<div style="background: #f5f5f5; padding: 15px; border-left: 4px solid #007bff; margin: 10px 0;">
+<code>
+{organisatie_naam}<br>
+{organisatie_adres}<br>
+{organisatie_telefoon}<br><br>
+
+Datum: {vandaag}<br>
+Dossiernummer: {dossierGetalGetal}<br><br>
+
+Beste {dossier_voornaam} {dossier_tussenvoegsel} {dossier_achternaam},<br><br>
+
+Hierbij bevestigen wij de koppeling tussen jou en {match_voornaam} {match_achternaam}.<br><br>
+
+Voor vragen kun je contact opnemen met {medewerker_naam} via {medewerker_email}.<br><br>
+
+Met vriendelijke groet,<br>
+{medewerker_naam}
+</code>
+</div>
+
+<p><strong>Wordt bij genereren:</strong></p>
+
+<div style="background: #f5f5f5; padding: 15px; border-left: 4px solid #28a745; margin: 10px 0;">
+Vrijwilligersorganisatie Amsterdam<br>
+Keizersgracht 123, 1015 CJ Amsterdam<br>
+020-1234567<br><br>
+
+Datum: 15 januari 2025<br>
+Dossiernummer: 2847<br><br>
+
+Beste Jan de Vries,<br><br>
+
+Hierbij bevestigen wij de koppeling tussen jou en Sara Bakker.<br><br>
+
+Voor vragen kun je contact opnemen met Marie Jansen via m.jansen@voa.nl.<br><br>
+
+Met vriendelijke groet,<br>
+Marie Jansen
+</div>
+
+<h3><span class="icon icon-admin"></span> Volledige woordenlijst raadplegen</h3>
+
+<p>De voorbeelden hierboven tonen de meest gebruikte variabelen. Het systeem bevat echter veel meer variabelen voor specifieke situaties.</p>
+
+<h4>Toegang tot complete woordenlijst</h4>
+
+<ol>
+    <li><span class="icon icon-admin"></span> Log in als administrator of medewerker</li>
+    <li><span class="icon icon-menu"></span> Klik in het admin menu op <strong>"Woordenlijst"</strong> (in de sidebar)</li>
+    <li><span class="icon icon-lijst"></span> Je ziet nu een complete lijst met alle beschikbare variabelen</li>
+    <li><span class="icon icon-zoeken"></span> Elke variabele heeft een duidelijke omschrijving</li>
+</ol>
+
+<div class="info-box">
+    <h4><span class="icon icon-help"></span> Speciale variabelen</h4>
+    <p>Naast de standaard variabelen zijn er ook speciale variabelen voor:</p>
+    <ul>
+        <li><strong>Medeschuldenaren</strong> - Contactgegevens van schuldenaren in het dossier</li>
+        <li><strong>Parkeerplaats info</strong> - Welke parkeerplaats het dossier heeft</li>
+        <li><strong>Custom velden</strong> - Door jouw organisatie toegevoegde velden</li>
+        <li><strong>Specifieke statussen</strong> - Status van het dossier op verschillende momenten</li>
+    </ul>
+    <p>Deze vind je allemaal terug in de volledige woordenlijst in het admin paneel.</p>
+</div>
+
+<h3><span class="icon icon-help"></span> Tips voor gebruik</h3>
+
+<table class="wiki-table">
+    <thead>
+        <tr>
+            <th>Do ✓</th>
+            <th>Don't ✗</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Kopieer variabelen uit de woordenlijst</td>
+            <td>Variabelen uit je hoofd typen</td>
+        </tr>
+        <tr>
+            <td>Test template met een test-dossier</td>
+            <td>Direct naar productie zonder testen</td>
+        </tr>
+        <tr>
+            <td>Gebruik {dossier_voornaam} voor persoonlijke aanhef</td>
+            <td>Gebruik {dossier_naam} in de aanhef (geeft volledige naam)</td>
+        </tr>
+        <tr>
+            <td>Check of variabele data bevat voordat je verstuurt</td>
+            <td>Aannemen dat alle velden altijd gevuld zijn</td>
+        </tr>
+        <tr>
+            <td>Bewaar je template na het maken</td>
+            <td>Elke keer opnieuw variabelen invoeren</td>
+        </tr>
+    </tbody>
+</table>
+
+<h3><span class="icon icon-help"></span> Veelgestelde vragen</h3>
+
+<table class="wiki-table">
+    <thead>
+        <tr>
+            <th>Vraag</th>
+            <th>Antwoord</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Wat als een variabele leeg is in het dossier?</td>
+            <td>Dan blijft de variabele leeg in het verstuurde document. Check daarom altijd of belangrijke velden gevuld zijn.</td>
+        </tr>
+        <tr>
+            <td>Kan ik meerdere variabelen achter elkaar gebruiken?</td>
+            <td>Ja, bijvoorbeeld: {dossier_voornaam} {dossier_tussenvoegsel} {dossier_achternaam}</td>
+        </tr>
+        <tr>
+            <td>Werken variabelen ook in Word documenten?</td>
+            <td>Ja, variabelen werken in email templates én Word document templates.</td>
+        </tr>
+        <tr>
+            <td>Kan ik zelf variabelen toevoegen?</td>
+            <td>Nee, alleen administrators met systeemtoegang kunnen variabelen toevoegen. Neem contact op met je beheerder.</td>
+        </tr>
+        <tr>
+            <td>Waarom zie ik {dossier_naam} in mijn verstuurde email?</td>
+            <td>De variabele is verkeerd gespeld of er ontbreekt een { of }. Kopieer altijd uit de woordenlijst!</td>
+        </tr>
+        <tr>
+            <td>Kan ik de datum formatteren?</td>
+            <td>Nee, {vandaag} gebruikt automatisch de standaard datum notatie van je systeem.</td>
+        </tr>
+        <tr>
+            <td>Zijn variabelen hoofdlettergevoelig?</td>
+            <td>Ja! {Dossier_Naam} werkt niet, alleen {dossier_naam} (kleine letters) werkt.</td>
+        </tr>
+    </tbody>
+</table>
+
+<div class="info-box">
+    <h4><span class="icon icon-help"></span> Meer hulp nodig?</h4>
+    <p>Heb je vragen over template variabelen of loop je tegen problemen aan bij het maken van templates? Neem contact op met je leidinggevende of systeem beheerder voor ondersteuning.</p>
+</div>
+
+<div class="wiki-page-nav">
+    <a href="#" data-page="rapportages" class="btn-prev"><span class="icon icon-pijl-links"></span> Vorige: Rapportages</a>
+    <a href="#" data-page="home" class="btn-next">Volgende: Home <span class="icon icon-pijl-rechts"></span></a>
+</div>
