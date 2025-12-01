@@ -3,7 +3,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-<!-- CHECKLIJSTEN.HTML - Uitgebreide gebruikers/admin versie -->
+<!-- CHECKLIJSTEN.HTML - Gebruikers pagina -->
 
 <nav class="breadcrumbs">
     <a href="#" data-page="home">Home</a> / Dossiers / Checklijsten
@@ -11,7 +11,7 @@
 
 <h2><span class="icon icon-checklijsten icon-primary"></span> Checklijsten</h2>
 
-<p>Checklijsten helpen bij het structureren van werkprocessen door meerdere taken te groeperen tot een samenhangend proces. Zowel medewerkers als administrators kunnen met checklijsten werken.</p>
+<p>Checklijsten helpen bij het structureren van werkprocessen door meerdere taken te groeperen tot een samenhangend proces. Met checklijsten werk je gestructureerd en overzichtelijk aan dossiers.</p>
 
 <h3><span class="icon icon-help"></span> Wat zijn checklijsten?</h3>
 
@@ -87,8 +87,8 @@
 <table class="wiki-table">
     <thead>
         <tr>
-            <th>Status</th>
-            <th>Betekenis</th>
+            <th style="width: 30%;">Status</th>
+            <th style="width: 70%;">Betekenis</th>
         </tr>
     </thead>
     <tbody>
@@ -114,7 +114,7 @@
         <li><strong>Totaal</strong>: "4 van 7 taken voltooid"</li>
         <li><strong>Percentage</strong>: "57% compleet"</li>
         <li><strong>Per taak</strong>: Afgevinkt of nog open</li>
-        <li><strong>Deadline</strong>: "Vervalt over 12 dagen"</li>
+        <li><strong>Deadline</strong>: "Vervalt over 12 dagen" (indien ingesteld)</li>
     </ul>
 </div>
 
@@ -139,7 +139,7 @@
 <table class="wiki-table">
     <tbody>
         <tr>
-            <td><strong>Doel</strong></td>
+            <td style="width: 30%;"><strong>Doel</strong></td>
             <td>Volledige onboarding van nieuwe vrijwilliger</td>
         </tr>
         <tr>
@@ -166,7 +166,7 @@
 <table class="wiki-table">
     <tbody>
         <tr>
-            <td><strong>Doel</strong></td>
+            <td style="width: 30%;"><strong>Doel</strong></td>
             <td>Intake en matching hulpvrager</td>
         </tr>
         <tr>
@@ -191,7 +191,7 @@
 <table class="wiki-table">
     <tbody>
         <tr>
-            <td><strong>Doel</strong></td>
+            <td style="width: 30%;"><strong>Doel</strong></td>
             <td>Eerste evaluatie na 3 maanden match</td>
         </tr>
         <tr>
@@ -205,155 +205,6 @@
         <tr>
             <td><strong>Resultaat</strong></td>
             <td>Inzicht in hoe match verloopt, eventuele aandachtspunten</td>
-        </tr>
-    </tbody>
-</table>
-
-<div class="warning-box">
-    <h4><span class="icon icon-waarschuwing"></span> Administrator functies</h4>
-    <p>Administrators hebben extra mogelijkheden voor checklijsten beheer:</p>
-    <ul>
-        <li><strong>Nieuwe checklijsten aanmaken</strong> - Via Admin → Checklijsten</li>
-        <li><strong>Taken koppelen</strong> - Selecteer welke taken in de checklist komen</li>
-        <li><strong>Vervalt na instellen</strong> - Deadline voor de hele checklist</li>
-        <li><strong>Parkeerplaats koppeling</strong> - Automatisch checklijsten toewijzen</li>
-    </ul>
-    <p>Neem contact op met je administrator als je nieuwe checklijsten nodig hebt of bestaande checklijsten wilt aanpassen.</p>
-</div>
-
-<h3><span class="icon icon-help"></span> Checklijsten beheren (administrators)</h3>
-
-<p>Als je administrator rechten hebt, kun je checklijsten beheren via het admin paneel:</p>
-
-<h4>Nieuwe checklist aanmaken</h4>
-
-<ol>
-    <li><span class="icon icon-admin"></span> <strong>Ga naar Admin paneel</strong> → Checklijsten</li>
-    <li><span class="icon icon-toevoegen"></span> <strong>Klik op "Nieuwe checklist"</strong></li>
-    <li><span class="icon icon-bewerken"></span> <strong>Vul formulier in:</strong>
-        <ul>
-            <li>Omschrijving (verplicht)</li>
-            <li>Vervalt na (optioneel)</li>
-            <li>Taken koppelen (minimaal 1)</li>
-            <li>Parkeerplaats per taak (optioneel)</li>
-        </ul>
-    </li>
-    <li><span class="icon icon-opslaan"></span> <strong>Sla de checklist op</strong></li>
-</ol>
-
-<h4>Taken aan checklist koppelen</h4>
-
-<p>Je kunt kiezen uit 21 standaard taken, gegroepeerd in categorieën:</p>
-
-<table class="wiki-table">
-    <thead>
-        <tr>
-            <th>Categorie</th>
-            <th>Taken</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td><strong>Intake & Screening</strong></td>
-            <td>Intake gesprek, Intake gesprek hulpvrager, VOG aangevraagd, VOG ontvangen, Referenten binnen, Vragenlijst referent BBBSU, Verzoek tot aanvullen van dossier</td>
-        </tr>
-        <tr>
-            <td><strong>Training</strong></td>
-            <td>Training gevolgd, Intervisie gevolgd</td>
-        </tr>
-        <tr>
-            <td><strong>Matching</strong></td>
-            <td>Matchen, Gematcht, Contact opgenomen, Contact verwijzer, Bijzonder aanbod, Belcontact ouder/verzorger</td>
-        </tr>
-        <tr>
-            <td><strong>Contracten</strong></td>
-            <td>Contract opmaken, Contract getekend ontvangen</td>
-        </tr>
-        <tr>
-            <td><strong>Monitoring</strong></td>
-            <td>Match gestopt, Big Slapend</td>
-        </tr>
-        <tr>
-            <td><strong>Custom</strong></td>
-            <td>Met een eerste taak, Met een tweede taak</td>
-        </tr>
-    </tbody>
-</table>
-
-<div class="info-box">
-    <h4><span class="icon icon-help"></span> Parkeerplaats per taak</h4>
-    <p>Door een parkeerplaats aan elke taak te koppelen, bepaal je <strong>waar de taak zichtbaar</strong> wordt:</p>
-    <ul>
-        <li>Taak met parkeerplaats "Kandidaat vrijwilligers" → Alleen zichtbaar bij kandidaten</li>
-        <li>Taak met parkeerplaats "Lopende koppels" → Alleen zichtbaar bij actieve matches</li>
-        <li>Taak zonder parkeerplaats → Altijd zichtbaar (standaard)</li>
-    </ul>
-</div>
-
-<h4>Vervalt na instellen</h4>
-
-<p>Met "Vervalt na" stel je een deadline in voor de hele checklist:</p>
-
-<table class="wiki-table">
-    <thead>
-        <tr>
-            <th style="width: 30%;">Voorbeeld</th>
-            <th style="width: 40%;">Instelling</th>
-            <th style="width: 30%;">Effect</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Aanmelden vrijwilliger</td>
-            <td>Vervalt na: 30 dagen</td>
-            <td>Herinnering na 30 dagen als niet compleet</td>
-        </tr>
-        <tr>
-            <td>Evaluatie 3 maanden</td>
-            <td>Vervalt na: 14 dagen</td>
-            <td>Moet binnen 2 weken voltooid zijn</td>
-        </tr>
-        <tr>
-            <td>Intake proces</td>
-            <td>Vervalt na: 3 weken</td>
-            <td>21 dagen om intake af te ronden</td>
-        </tr>
-    </tbody>
-</table>
-
-<h4>Checklijsten zoeken en filteren</h4>
-
-<p>In het admin overzicht kun je zoeken:</p>
-
-<ul>
-    <li><span class="icon icon-zoeken"></span> Typ in het zoek veld rechtsboven</li>
-    <li><span class="icon icon-tijd"></span> De lijst filtert automatisch</li>
-    <li><span class="icon icon-bewerken"></span> Klik op de checklist om te bewerken</li>
-</ul>
-
-<h4>Checklijsten verwijderen</h4>
-
-<p>Je kunt alleen checklijsten verwijderen die <strong>niet in gebruik zijn</strong>:</p>
-
-<table class="wiki-table">
-    <thead>
-        <tr>
-            <th>Status</th>
-            <th>Verwijderen mogelijk?</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td><span class="icon icon-vinkje"></span> Checklist nooit gebruikt</td>
-            <td>✓ Ja, verwijder icoon is zichtbaar</td>
-        </tr>
-        <tr>
-            <td><span class="icon icon-cancel"></span> Checklist in gebruik bij dossiers</td>
-            <td>✗ Nee, geen verwijder icoon</td>
-        </tr>
-        <tr>
-            <td><span class="icon icon-cancel"></span> Checklist gekoppeld aan parkeerplaats</td>
-            <td>✗ Nee, zou automatische koppeling breken</td>
         </tr>
     </tbody>
 </table>
@@ -396,8 +247,8 @@
 <table class="wiki-table">
     <thead>
         <tr>
-            <th>Vraag</th>
-            <th>Antwoord</th>
+            <th style="width: 45%;">Vraag</th>
+            <th style="width: 55%;">Antwoord</th>
         </tr>
     </thead>
     <tbody>
@@ -431,6 +282,11 @@
         </tr>
     </tbody>
 </table>
+
+<div class="warning-box">
+    <h4><span class="icon icon-waarschuwing"></span> Administrator functies</h4>
+    <p>Wil je nieuwe checklijsten aanmaken of bestaande checklijsten aanpassen? Dit kan alleen via het admin paneel. Zie de <a href="#" data-page="admin-checklijsten">admin-checklijsten</a> pagina voor meer informatie, of neem contact op met je administrator.</p>
+</div>
 
 <div class="info-box">
     <h4><span class="icon icon-help"></span> Meer hulp nodig?</h4>

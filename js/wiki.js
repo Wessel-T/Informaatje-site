@@ -17,6 +17,7 @@ const pageIndex = {
     notities: { title: "Notities", file: "wiki-pages/notities.html" },
     "admin-vragenlijsten": { title: "Vragenlijsten Beheer", file: "wiki-pages/admin-vragenlijsten.html" },
     "admin-taken": { title: "Taken Beheer", file: "wiki-pages/admin-taken.html" },
+    "admin-checklijsten": { title: "Checklijsten Beheer", file: "wiki-pages/admin-checklijsten.html" },
     weeklies: { title: "Weeklies", file: "wiki-pages/weeklies.html" },
     autorisatie: { title: "Autorisatie", file: "wiki-pages/autorisatie.html" },
     woordenlijst: { title: "Woordenlijst", file: "wiki-pages/woordenlijst.html" }
